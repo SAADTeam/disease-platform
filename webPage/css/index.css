@@ -1,4 +1,17 @@
+@charset utf-8
+
 p
 {
   text-indent: 28px;
 }
+
+.sidebar{
+
+}
+
+.side{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius:20px;
+}
+
