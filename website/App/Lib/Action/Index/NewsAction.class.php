@@ -1,14 +1,15 @@
 <?php
 /*
- * 前台首页控制器
+ * 显示新闻动态页控制器
  */
-class IndexAction extends Action
+class NewsAction extends Action
 {
     public function index()
     {
+       
         $this->display();
     }
+    
+ 
 }
-
-?>
 
