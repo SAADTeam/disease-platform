@@ -52,54 +52,50 @@
     <!--sidebar-->
     <div class="container-fluid">
         <div class="row">
-            <div class="sidebar panel panel-primary col-md-2 nav nav-sidebar ">
+            <div class="col-md-2 ">
+            <div class="sidebar panel panel-primary nav nav-sidebar ">
                 <div class="panel-body">
-                    <h4>螺</h4>
-                    <div class="list-group">
-                        <a class="list-group-item active">蔓杆双脐螺</a>
-                        <a class="list-group-item">福寿螺</a>
-                        <a class="list-group-item">褐云玛瑙螺</a>
-                    </div>
-                    <h4>蚊媒</h4>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">白纹伊蚊</a>
-                        <a href="#" class="list-group-item">埃及伊蚊</a>
-                    </div>
-                    <h4>病原体</h4>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">锥虫</a>
-                        <a href="#" class="list-group-item">疟原虫</a>
-                        <a href="#" class="list-group-item">血吸虫</a>
+                    
+                    <foreach name="speciesName" item="value">
+                        <h4>{$key}</h4>
+                        <div class="list-group">
+                            <foreach name="value" item="v">
+                                <a class="list-group-item">{$v}</a>
+                            </foreach>
+                        </div>
+                    </foreach>
+
                     </div>
                 </div>
             </div>
-            <!-- main block  -->
-            <div class="container-fluid">
-                <div class="col-md-offset-2 panel panel-default ">
-                    <div class="panel-body ">
-                        <div class="btn-group-vertical col-md-2 side btn-primary">
-                            <button class="btn btn-warning">基本信息介绍</button>
-                            <br>
-                            <br>
-                            <button class="btn btn-warning">项目进展</button>
-                            <br>
-                            <br>
-                            <button class="btn btn-warning">相关数据库</button>
-                            <br>
-                            <br>
-                            <button class="btn btn-warning">项目组发表文章</button>
-                            <br>
-                            <br>
-                            <button class="btn btn-warning">相关文章</button>
+            <div class="col-md-10 ">
+                <div class="panel panel-default ">
+                        <div class="panel-body ">
+                            <div class="btn-group-vertical col-md-2 side btn-primary">
+                                <button class="btn btn-warning">基本信息介绍</button>
+                                <br>
+                                <br>
+                                <button class="btn btn-warning">项目进展</button>
+                                <br>
+                                <br>
+                                <button class="btn btn-warning">相关数据库</button>
+                                <br>
+                                <br>
+                                <button class="btn btn-warning">项目组发表文章</button>
+                                <br>
+                                <br>
+                                <button class="btn btn-warning">相关文章</button>
+                                </div>
+                            <div>
+                                <h1 class="text-center">文字图片</h1>
                             </div>
-                        <div>
-                            <h1 class="text-center">文字图片</h1>
                         </div>
                     </div>
-                </div>
-            </div>
+              </div>
+          </div>
+
         </div>
-    </div>
+    
 </body>
 
 </html>

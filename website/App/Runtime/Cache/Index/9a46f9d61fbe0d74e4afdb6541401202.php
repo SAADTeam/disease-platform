@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -38,8 +38,8 @@
                 <li><a href="#">首页</a></li>
                 <li><a href="#about">关于项目</a></li>
                 <li><a href="#about">研究团队</a></li>
-                <li><a href="#contact">新闻动态</a></li>
-                <li class="active"><a href="#contact">通知公告</a></li>
+                <li class="active"><a href="#contact">新闻动态</a></li>
+                <li><a href="#contact">通知公告</a></li>
                 <li><a href="#contact">项目进展</a></li>
                 <li><a href="#contact">发表文章</a></li>
                 <li><a href="#contact">学术交流</a></li>
@@ -52,10 +52,10 @@
     <div class="container">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <div class="panel-title text-center">{$notificationBody['notificationTitle']}</div>
+                <div class="panel-title text-center"><?php echo ($newsBody['newsTitle']); ?></div>
             </div>
             <div class="panel-body text-center" style="height:600px;">
-                {$notificationBody['notificationContent']}
+                <?php echo ($newsBody['newsContent']); ?>
             </div>
         </div>
     </div>

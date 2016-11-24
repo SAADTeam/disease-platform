@@ -55,43 +55,17 @@
                 <div class="panel-title text-center">新闻动态</div>
             </div>
             <div class="panel-body">
-                <table class="table table-condensed">
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">病原体生物现状研究详情</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
+                <table class="table table-condensed table-hover table-striped">
+                    
+                    <foreach name="news" item="v">
+                        <tr>
+                            <td>
+                                <a  class="margin-left-20 pull-left" href="{:U( 'Index/News/detail' , array( 'newsId' =>$v['newsId'] ) )}">{$v['newsTitle']}</a>
+                                <i class="margin-right-20 pull-right">{:date( 'Y-m-d' , $v['newsDate'] )}</i>
+                            </td>
+                        </tr>
+                    </foreach>
+                    
                 </table>
             </div>
         </div>

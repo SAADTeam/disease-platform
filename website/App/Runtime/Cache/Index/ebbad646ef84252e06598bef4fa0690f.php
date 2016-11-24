@@ -8,11 +8,11 @@
     <title>重要热带病传播入侵媒介及病原体生物学特性研究平台</title>
     <!-- Bootstrap -->
     <!-- CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/index.css" rel="stylesheet">
     <!-- JS -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/jquery-3.1.0.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <!-- logo & title -->
         <div class="row">
             <div class="col-md-2">
-                <img src="./image/logo.jpg" class="img-responsive" alt="logo image">
+                <img src="__PUBLIC__/image/logo.jpg" class="img-responsive" alt="logo image">
             </div>
             <div class="col-md-10">
                 <h2>重要热带病传播入侵媒介及病原体生物学特性研究平台</h2>

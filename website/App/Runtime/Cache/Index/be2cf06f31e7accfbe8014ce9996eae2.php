@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
@@ -36,11 +36,11 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="#">首页</a></li>
-                <li><a href="#about">关于项目</a></li>
+                <li class="active"><a href="#about">关于项目</a></li>
                 <li><a href="#about">研究团队</a></li>
                 <li><a href="#contact">新闻动态</a></li>
                 <li><a href="#contact">通知公告</a></li>
-                <li class="active"><a href="#contact">项目进展</a></li>
+                <li><a href="#contact">项目进展</a></li>
                 <li><a href="#contact">发表文章</a></li>
                 <li><a href="#contact">学术交流</a></li>
                 <li><a href="#contact">数据/工具</a></li>
@@ -52,33 +52,46 @@
     <!--sidebar-->
     <div class="container-fluid">
         <div class="row">
-            <div class="sidebar panel panel-primary col-md-2 nav nav-sidebar ">
+            <div class="col-md-2 ">
+            <div class="sidebar panel panel-primary nav nav-sidebar ">
                 <div class="panel-body">
                     
-                    <foreach name="conferenceName" item="value">
-                        <h4>{$key}</h4>
+                    <?php if(is_array($speciesName)): foreach($speciesName as $key=>$value): ?><h4><?php echo ($key); ?></h4>
                         <div class="list-group">
-                            <foreach name="value" item="v">
-                                <a class="list-group-item" href="{:U( 'Index/AcademicExchange/index' , array( 'getConferenceName' =>$v ) )}">{$v}</a>
-                            </foreach>
-                        </div>
-                    </foreach>
-                    
-                </div>
-            </div>
-            <!-- main block  -->
-            <div class="container-fluid">
-                <div class="col-md-offset-2 panel panel-default ">
-                    <div class="panel-body ">
-                        <div>
-                            <h1 class="text-center">{$conferenceBody['conferenceName']}</h1>
-                            <p>{$conferenceBody['conferenceInfo']}</p>
-                        </div>
+                            <?php if(is_array($value)): foreach($value as $key=>$v): ?><a class="list-group-item"><?php echo ($v); ?></a><?php endforeach; endif; ?>
+                        </div><?php endforeach; endif; ?>
+
                     </div>
                 </div>
             </div>
+            <div class="col-md-10 ">
+                <div class="panel panel-default ">
+                        <div class="panel-body ">
+                            <div class="btn-group-vertical col-md-2 side btn-primary">
+                                <button class="btn btn-warning">基本信息介绍</button>
+                                <br>
+                                <br>
+                                <button class="btn btn-warning">项目进展</button>
+                                <br>
+                                <br>
+                                <button class="btn btn-warning">相关数据库</button>
+                                <br>
+                                <br>
+                                <button class="btn btn-warning">项目组发表文章</button>
+                                <br>
+                                <br>
+                                <button class="btn btn-warning">相关文章</button>
+                                </div>
+                            <div>
+                                <h1 class="text-center">文字图片</h1>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+          </div>
+
         </div>
-    </div>
+    
 </body>
 
 </html>
