@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -38,8 +38,8 @@
                 <li><a href="#">首页</a></li>
                 <li><a href="#about">关于项目</a></li>
                 <li><a href="#about">研究团队</a></li>
-                <li><a href="#contact">新闻动态</a></li>
-                <li class="active"><a href="#contact">通知公告</a></li>
+                <li class="active"><a href="#contact">新闻动态</a></li>
+                <li><a href="#contact">通知公告</a></li>
                 <li><a href="#contact">项目进展</a></li>
                 <li><a href="#contact">发表文章</a></li>
                 <li><a href="#contact">学术交流</a></li>
@@ -52,10 +52,19 @@
     <div class="container">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <div class="panel-title text-center">{$notificationBody['notificationTitle']}</div>
+                <div class="panel-title text-center">新闻动态</div>
             </div>
-            <div class="panel-body text-center" style="height:600px;">
-                {$notificationBody['notificationContent']}
+            <div class="panel-body">
+                <table class="table table-condensed table-hover table-striped">
+                    
+                    <?php if(is_array($news)): foreach($news as $key=>$v): ?><tr>
+                            <td>
+                                <a  class="margin-left-20 pull-left" href="<?php echo U( 'Index/News/detail' , array( 'newsId' =>$v['newsId'] ) );?>"><?php echo ($v['newsTitle']); ?></a>
+                                <i class="margin-right-20 pull-right"><?php echo date( 'Y-m-d' , $v['newsDate'] );?></i>
+                            </td>
+                        </tr><?php endforeach; endif; ?>
+                    
+                </table>
             </div>
         </div>
     </div>

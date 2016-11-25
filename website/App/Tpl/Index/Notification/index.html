@@ -55,43 +55,17 @@
                 <div class="panel-title text-center">通知公告</div>
             </div>
             <div class="panel-body">
-                <table class="table table-condensed">
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="default">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
-                    <tr class="success">
-                        <td><a class="margin-left-20 pull-left">通知</a><i class="margin-right-20 pull-right">2016-09-27</i></td>
-                    </tr>
+                <table class="table table-condensed table-hover table-striped">
+                    
+                    <foreach name="notification" item="v">
+                        <tr>
+                            <td>
+                                <a  class="margin-left-20 pull-left" href="{:U( 'Index/notification/detail' , array( 'notificationId' =>$v['notificationId'] ) )}">{$v['notificationTitle']}</a>
+                                <i class="margin-right-20 pull-right">{:date( 'Y-m-d' , $v['notificationDate'] )}</i>
+                            </td>
+                        </tr>
+                    </foreach>
+                    
                 </table>
             </div>
         </div>
