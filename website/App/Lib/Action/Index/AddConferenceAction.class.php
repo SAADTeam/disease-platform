@@ -1,6 +1,6 @@
 <?php
 /*
- * 显示新闻动态页控制器
+ * 新增学术会议页控制器
  */
 class AddConferenceAction extends Action
 {

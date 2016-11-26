@@ -1,6 +1,6 @@
 <?php
 /*
- * 显示新闻动态页控制器
+ * 显示通知公告页控制器
  */
 class NotificationAction extends Action
 {
@@ -19,7 +19,7 @@ class NotificationAction extends Action
         $notificationId = I( 'notificationId' , '' , 'htmlspecialchars' );
         
         //从数据库读取相应的新闻内容
-        $notificationBody = M( 'notification' )->where( array( 'notificationId' =>$notificationId ) )->select();
+        $notificationBody = M( 'notification' )->where( array( 'notificationId' =>$notificationId ) )->find();
         $this->notificationBody = $notificationBody;
         
         $this->display();

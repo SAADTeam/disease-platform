@@ -8,13 +8,6 @@ class RegisterAction extends Action
     {
         $this->display();
     }
-    
-    public function verify()
-    {
-        import( 'ORG.Util.Image' );
-        ob_end_clean();
-        Image::buildImageVerify();
-    }
 
     public function register()
     {
@@ -23,11 +16,6 @@ class RegisterAction extends Action
         }
         if (!filled_out($_POST)) {
             $this->error('输入项不能为空！');
-        }
-
-        //验证码是否正确
-        if (I('verify', '', 'md5') != session(verify)) {
-            $this->error('验证码错误！');
         }
         
         //获取表单数据
@@ -57,6 +45,7 @@ class RegisterAction extends Action
             'userResearchDirection' => $userResearchDirection ,
             'userResearchResult' => $userResearchResult
         );
+        
         if ( M('user')->data($data)->add() ) {
             $this->success( '注册成功！', U( 'Index/Index/index' ) );
         }

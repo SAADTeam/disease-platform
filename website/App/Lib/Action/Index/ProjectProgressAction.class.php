@@ -1,12 +1,11 @@
 <?php
 /*
- * 显示关于项目页控制器
+ * 显示项目进展页控制器
  */
-class AboutProjectAction extends Action
+class ProjectProgressAction extends Action
 {
     public function index()
     {
-        //显示页面左侧部分
         $creature = D( 'CreatureRelation' )->relation( 'speciesproject' )->select();
         $this->creature = $creature;
         
@@ -14,7 +13,7 @@ class AboutProjectAction extends Action
         $getSpeciesProjectId = I( 'getSpeciesProjectId' , '' , 'htmlspecialchars' );
         if( $getSpeciesProjectId )
         {            
-            $speciesBody = D( 'SpeciesProjectRelation' )->relation(true)->where( array( 'speciesProjectId' =>$getSpeciesProjectId ) )->find();
+            $speciesBody = M( 'speciesproject' )->where( array( 'speciesProjectId'=>$getSpeciesProjectId ) )->find();
             $this->speciesBody = $speciesBody;
         }
         

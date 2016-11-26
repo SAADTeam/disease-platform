@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>新闻动态-重要热带病传播入侵媒介及病原体生物学特性研究平台</title>
+    <title>发表文章-重要热带病传播入侵媒介及病原体生物学特性研究平台</title>
     <!-- Bootstrap -->
     <!-- CSS -->
     <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
@@ -15,9 +15,40 @@
     <script src="__PUBLIC__/js/bootstrap.min.js"></script>
     
     <style type="text/css">
-    body {
-        padding-top: 70px;
-        padding-left: 10px;
+    .paper-header {
+        background-color: #f16528;
+        height: 100px;
+    }
+    
+    a.sitename {
+        display: inline-block;
+        padding-top: 20px;
+        color: #fff;
+        font-size: 3.75rem;
+        font-style: bold;
+        font-weight: bold;
+    }
+    
+    hr {
+        border-color: #ccc;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    li .list-num {
+        color: #777;
+        vertical-align: top;
+    }
+    
+    ul li {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    .paper-authors {
+        color: #777;
+        font-size: 0.8em;
     }
     </style>
 </head>
@@ -36,9 +67,9 @@
                             <li><a href="{:U( 'Index/AboutProject' )}">关于项目</a></li>
                             <li><a href="{:U( 'Index/ResearchTeam' )}">研究团队</a></li>
                             <li><a href="{:U( 'Index/News' )}">新闻动态</a></li>
-                            <li class="active"><a href="{:U( 'Index/Notification' )}">通知公告</a></li>
+                            <li><a href="{:U( 'Index/Notification' )}">通知公告</a></li>
                             <li><a href="{:U( 'Index/ProjectProgress' )}">项目进展</a></li>
-                            <li><a href="{:U( 'Index/PublishArticle' )}">发表文章</a></li>
+                            <li class="active"><a href="{:U( 'Index/PublishArticle' )}">发表文章</a></li>
                             <li><a href="{:U( 'Index/AcademicExchange' )}">学术交流</a></li>
                             <li><a href="{:U( 'Index/DataTool' )}">数据/工具</a></li>
                         </ul>
@@ -46,25 +77,28 @@
                     <!--/.nav-collapse -->
                 </nav>
         
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="panel-title text-center">通知公告</div>
-            </div>
-            <div class="panel-body">
-                <table class="table table-condensed table-hover table-striped">
-                    
-                    <foreach name="notification" item="v">
-                        <tr>
-                            <td>
-                                <a  class="margin-left-20 pull-left" href="{:U( 'Index/Notification/detail' , array( 'notificationId' =>$v['notificationId'] ) )}">{$v['notificationTitle']}</a>
-                                <i class="margin-right-20 pull-right">{:date( 'Y-m-d' , $v['notificationDate'] )}</i>
-                            </td>
-                        </tr>
+        <!-- 文章计数变量  -->
+            <?php $count = 1; ?>
+        <div>
+            <h1 class="text-center">所有发表文章</h1>
+            <foreach name="publishArticleBody" item="value">
+                <h4>{$key}</h4>
+                <hr>
+                <ul>
+                    <foreach name="value" item="v">
+                    <li>
+                        <p class="list-num inline-block">{$count++}</p>
+                        <div class="inline-block">
+                            <a href="http://{$v['publishArticlelink']}">{$v['publishArticleTitle']}</a>
+                            <p class="paper-authors">{$v['author']}</p>
+                        </div>
+                    </li>
                     </foreach>
-                    
-                </table>
-            </div>
+                </ul>
+                <br>
+            </foreach>
         </div>
+        
     </div>
 </body>
 

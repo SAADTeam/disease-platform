@@ -1,6 +1,6 @@
 <?php
 /*
- * 显示新闻动态页控制器
+ * 新增新闻动态页控制器
  */
 class AddNewsAction extends Action
 {

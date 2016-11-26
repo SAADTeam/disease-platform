@@ -11,8 +11,8 @@
     <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
     <link href="__PUBLIC__/css/index.css" rel="stylesheet">
     <!-- JS -->
-    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/js/jquery-3.1.0.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -22,34 +22,30 @@
             <div class="col-md-2">
                 <img src="__PUBLIC__/image/logo.jpg" class="img-responsive" alt="logo image">
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 text-center">
                 <h2>重要热带病传播入侵媒介及病原体生物学特性研究平台</h2>
             </div>
         </div>
         <!-- Fixed navbar -->
         <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Bootstrap theme</a>
+                <a class="navbar-brand" href="#">中山大学研究平台</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">首页</a></li>
-                    <li><a href="#about">关于项目</a></li>
-                    <li><a href="#about">研究团队</a></li>
-                    <li><a href="#contact">新闻动态</a></li>
-                    <li><a href="#contact">通知公告</a></li>
-                    <li><a href="#contact">项目进展</a></li>
-                    <li><a href="#contact">发表文章</a></li>
-                    <li><a href="#contact">学术交流</a></li>
-                    <li><a href="#contact">数据/工具</a></li>
-                    <li><a href="#contact">数据分析</a></li>
+                    <li><a href="<?php echo U( 'Index/AboutProject' );?>">关于项目</a></li>
+                    <li><a href="<?php echo U( 'Index/ResearchTeam' );?>">研究团队</a></li>
+                    <li><a href="<?php echo U( 'Index/News' );?>">新闻动态</a></li>
+                    <li><a href="<?php echo U( 'Index/Notification' );?>">通知公告</a></li>
+                    <li><a href="<?php echo U( 'Index/ProjectProgress' );?>">项目进展</a></li>
+                    <li><a href="<?php echo U( 'Index/PublishArticle' );?>">发表文章</a></li>
+                    <li><a href="<?php echo U( 'Index/AcademicExchange' );?>">学术交流</a></li>
+                    <li><a href="<?php echo U( 'Index/DataTool' );?>">数据/工具</a></li>
                 </ul>
+                <a class="btn btn-primary  navbar-btn navbar-right" href="<?php echo U( 'Index/Register' );?>" role="button">注册</a>
+                <a class="btn btn-success  navbar-btn navbar-right" href="<?php echo U( 'Index/Login' );?>" role="button">登录</a>
+
             </div>
             <!--/.nav-collapse -->
         </nav>
@@ -86,15 +82,9 @@
                     <h3 class="panel-title">新闻动态</h3>
                 </div>
                 <div class="panel-body">
-                    <a target="_blank" href="#">最新新闻动态链接1</a>
-                    <br />
-                    <br />
-                    <a target="_blank" href="#">最新新闻动态链接2</a>
-                    <br />
-                    <br />
-                    <a target="_blank" href="#">最新新闻动态链接3</a>
-                    <br />
-                    <br />
+                    <?php if(is_array($latestNews)): foreach($latestNews as $key=>$v): ?><a target="_blank" href="<?php echo U( 'Index/News/detail' , array( 'newsId' =>$v['newsId'] ) );?>"><?php echo ($v['newsTitle']); ?></a>
+                        <br />
+                        <br /><?php endforeach; endif; ?>
                 </div>
             </div>
             <div class="col-md-5 panel panel-success">
@@ -102,20 +92,20 @@
                     <h3 class="panel-title">通知公告</h3>
                 </div>
                 <div class="panel-body">
-                    <a target="_blank" href="#">最新通知公告链接1</a>
-                    <br />
-                    <br />
-                    <a target="_blank" href="#">最新通知公告链接2</a>
-                    <br />
-                    <br />
-                    <a target="_blank" href="#">最新通知公告链接3</a>
-                    <br />
-                    <br />
+                    <?php if(is_array($latestNotification)): foreach($latestNotification as $key=>$v): ?><a target="_blank" href="<?php echo U( 'Index/Notification/detail' , array( 'notificationId' =>$v['notificationId'] ) );?>"><?php echo ($v['notificationTitle']); ?></a>
+                        <br />
+                        <br /><?php endforeach; endif; ?>
                 </div>
             </div>
             <div class="col-md-5">
             </div>
         </div>
+        
+        <hr />
+        <footer>
+            <p>&copy; 2016 &nbsp;中山大学&nbsp; 数据科学与计算机学院&nbsp; 吴杰锋&nbsp;吴晓晖&nbsp;姚伟斌&nbsp;冯昭凯</p>
+        </footer>
+
     </div>
     <!--container -->
 </body>

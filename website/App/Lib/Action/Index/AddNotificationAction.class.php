@@ -1,6 +1,6 @@
 <?php
 /*
- * 显示新闻动态页控制器
+ * 新增通知公告页控制器
  */
 class AddNotificationAction extends Action
 {

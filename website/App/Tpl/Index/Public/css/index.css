@@ -4,6 +4,10 @@ p {
     text-indent: 28px;
 }
 
+.hiddenStyle{
+    display: none;
+}
+
 .sidebar {}
 
 .side {
@@ -50,3 +54,4 @@ p {
 .padding-right-40 {
     padding-right: 40px;
 }
+
