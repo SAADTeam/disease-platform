@@ -8,13 +8,6 @@ class LoginAction extends Action
     {
         $this->display();
     }
-    
-    public function verify()
-    {
-        import( 'ORG.Util.Image' );
-        ob_end_clean();
-        Image::buildImageVerify();
-    }
 
     public function login()
     {
@@ -23,11 +16,6 @@ class LoginAction extends Action
         }
         if (!filled_out($_POST)) {
             $this->error('输入项不能为空！');
-        }
-
-        //验证码是否正确
-        if (I('verify', '', 'md5') != session(verify)) {
-            $this->error('验证码错误！');
         }
         
         //获取表单数据
@@ -43,7 +31,7 @@ class LoginAction extends Action
            session( 'userId' , $user['userId'] );
            session( 'userName' , $user['userName'] );
            
-           $this->redirect( 'Index/Index/index' );
+           $this->success( '登录成功！', U( 'Index/Index/index' ) );
         }
     }
 }

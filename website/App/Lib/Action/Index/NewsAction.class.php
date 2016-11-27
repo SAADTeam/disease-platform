@@ -19,7 +19,7 @@ class NewsAction extends Action
         $newsId = I( 'newsId' , '' , 'htmlspecialchars' );
         
         //从数据库读取相应的新闻内容
-        $newsBody = M( 'news' )->where( array( 'newsId' =>$newsId ) )->select();
+        $newsBody = M( 'news' )->where( array( 'newsId' =>$newsId ) )->find();
         $this->newsBody = $newsBody;
         
         $this->display();

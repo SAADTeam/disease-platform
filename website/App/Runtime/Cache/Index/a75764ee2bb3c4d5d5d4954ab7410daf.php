@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -32,15 +32,15 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="{:U( 'Index/Index' )}">首页</a></li>
-                            <li><a href="{:U( 'Index/AboutProject' )}">关于项目</a></li>
-                            <li><a href="{:U( 'Index/ResearchTeam' )}">研究团队</a></li>
-                            <li><a href="{:U( 'Index/News' )}">新闻动态</a></li>
-                            <li class="active"><a href="{:U( 'Index/Notification' )}">通知公告</a></li>
-                            <li><a href="{:U( 'Index/ProjectProgress' )}">项目进展</a></li>
-                            <li><a href="{:U( 'Index/PublishArticle' )}">发表文章</a></li>
-                            <li><a href="{:U( 'Index/AcademicExchange' )}">学术交流</a></li>
-                            <li><a href="{:U( 'Index/DataTool' )}">数据/工具</a></li>
+                            <li><a href="<?php echo U( 'Index/Index' );?>">首页</a></li>
+                            <li><a href="<?php echo U( 'Index/AboutProject' );?>">关于项目</a></li>
+                            <li><a href="<?php echo U( 'Index/ResearchTeam' );?>">研究团队</a></li>
+                            <li><a href="<?php echo U( 'Index/News' );?>">新闻动态</a></li>
+                            <li class="active"><a href="<?php echo U( 'Index/Notification' );?>">通知公告</a></li>
+                            <li><a href="<?php echo U( 'Index/ProjectProgress' );?>">项目进展</a></li>
+                            <li><a href="<?php echo U( 'Index/PublishArticle' );?>">发表文章</a></li>
+                            <li><a href="<?php echo U( 'Index/AcademicExchange' );?>">学术交流</a></li>
+                            <li><a href="<?php echo U( 'Index/DataTool' );?>">数据/工具</a></li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
@@ -53,14 +53,12 @@
             <div class="panel-body">
                 <table class="table table-condensed table-hover table-striped">
                     
-                    <foreach name="notification" item="v">
-                        <tr>
+                    <?php if(is_array($notification)): foreach($notification as $key=>$v): ?><tr>
                             <td>
-                                <a  class="margin-left-20 pull-left" href="{:U( 'Index/Notification/detail' , array( 'notificationId' =>$v['notificationId'] ) )}">{$v['notificationTitle']}</a>
-                                <i class="margin-right-20 pull-right">{:date( 'Y-m-d' , $v['notificationDate'] )}</i>
+                                <a  class="margin-left-20 pull-left" href="<?php echo U( 'Index/Notification/detail' , array( 'notificationId' =>$v['notificationId'] ) );?>"><?php echo ($v['notificationTitle']); ?></a>
+                                <i class="margin-right-20 pull-right"><?php echo date( 'Y-m-d' , $v['notificationDate'] );?></i>
                             </td>
-                        </tr>
-                    </foreach>
+                        </tr><?php endforeach; endif; ?>
                     
                 </table>
             </div>

@@ -11,80 +11,84 @@
     <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
     <link href="__PUBLIC__/css/index.css" rel="stylesheet">
     <!-- JS -->
-    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/js/jquery-3.1.0.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    
     <style type="text/css">
     body {
         padding-top: 70px;
         padding-left: 20px;
     }
     </style>
+    <script>
+        function showDetail( infoType )
+        {
+            document.getElementById( infoType ).style.display="block";
+        }
+    </script>
 </head>
 
 <body>
-    <!--fixed nav-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Bootstrap theme</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#">首页</a></li>
-                <li><a href="#about">关于项目</a></li>
-                <li><a href="#about">研究团队</a></li>
-                <li><a href="#contact">新闻动态</a></li>
-                <li><a href="#contact">通知公告</a></li>
-                <li class="active"><a href="#contact">项目进展</a></li>
-                <li><a href="#contact">发表文章</a></li>
-                <li><a href="#contact">学术交流</a></li>
-                <li><a href="#contact">数据/工具</a></li>
-                <li><a href="#contact">数据分析</a></li>
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
-    </nav>
+
     <!--sidebar-->
     <div class="container-fluid">
+        
+        <!--fixed nav-->
+            <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">中山大学研究平台</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="{:U( 'Index/Index' )}">首页</a></li>
+                            <li><a href="{:U( 'Index/AboutProject' )}">关于项目</a></li>
+                            <li><a href="{:U( 'Index/ResearchTeam' )}">研究团队</a></li>
+                            <li><a href="{:U( 'Index/News' )}">新闻动态</a></li>
+                            <li><a href="{:U( 'Index/Notification' )}">通知公告</a></li>
+                            <li class="active"><a href="{:U( 'Index/ProjectProgress' )}">项目进展</a></li>
+                            <li><a href="{:U( 'Index/PublishArticle' )}">发表文章</a></li>
+                            <li><a href="{:U( 'Index/AcademicExchange' )}">学术交流</a></li>
+                            <li><a href="{:U( 'Index/DataTool' )}">数据/工具</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </nav>
+        
         <div class="row">
             <div class="sidebar panel panel-primary col-md-2 nav nav-sidebar ">
                 <div class="panel-body">
-                    <h4>螺</h4>
-                    <div class="list-group">
-                        <a class="list-group-item active">蔓杆双脐螺</a>
-                        <a class="list-group-item">福寿螺</a>
-                        <a class="list-group-item">褐云玛瑙螺</a>
-                    </div>
-                    <h4>蚊媒</h4>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">白纹伊蚊</a>
-                        <a href="#" class="list-group-item">埃及伊蚊</a>
-                    </div>
-                    <h4>病原体</h4>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">锥虫</a>
-                        <a href="#" class="list-group-item">疟原虫</a>
-                        <a href="#" class="list-group-item">血吸虫</a>
-                    </div>
+                    <!-- 显示页面左侧部分 -->
+                    <foreach name="creature" item="value">
+                        <h4>{$value['creatureName']}</h4>
+                        <div class="list-group">
+                            <foreach name="value['speciesproject']" item="v">
+                                <a class="list-group-item" href="{:U( 'Index/ProjectProgress/index' , array( 'getSpeciesProjectId' =>$v['speciesProjectId'] ) )}">{$v['speciesName']}</a>
+                            </foreach>
+                        </div>
+                    </foreach>
+
                 </div>
             </div>
             <!-- main block  -->
             <div class="container-fluid">
                 <div class="col-md-offset-2 panel panel-default ">
                     <div class="panel-body ">
-                        <div>
-                            <h1 class="text-center">数据类型：文字、图片</h1>
-                        </div>
+                        <!-- 项目进展  -->
+                            <div class="col-md-10 hiddenStyle" id="progress">
+                                <h1 class="text-center">{$speciesBody['speciesName']}的项目进展</h1>
+                                <p>{$speciesBody['projectProgress']}</p>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <?php 
+    if( $speciesBody ){
+        echo "<script type='text/javascript'>showDetail('progress')</script>"; }
+    ?>
+    
 </body>
 
 </html>

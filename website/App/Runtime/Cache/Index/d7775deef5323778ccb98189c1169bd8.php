@@ -20,10 +20,16 @@
         padding-left: 20px;
     }
     </style>
+    <script>
+        function showDetail( infoType )
+        {
+            document.getElementById( infoType ).style.display="block";
+        }
+    </script>
 </head>
 
 <body>
-    
+
     <!--sidebar-->
     <div class="container-fluid">
         
@@ -39,9 +45,9 @@
                             <li><a href="<?php echo U( 'Index/ResearchTeam' );?>">研究团队</a></li>
                             <li><a href="<?php echo U( 'Index/News' );?>">新闻动态</a></li>
                             <li><a href="<?php echo U( 'Index/Notification' );?>">通知公告</a></li>
-                            <li><a href="<?php echo U( 'Index/ProjectProgress' );?>">项目进展</a></li>
+                            <li class="active"><a href="<?php echo U( 'Index/ProjectProgress' );?>">项目进展</a></li>
                             <li><a href="<?php echo U( 'Index/PublishArticle' );?>">发表文章</a></li>
-                            <li class="active"><a href="<?php echo U( 'Index/AcademicExchange' );?>">学术交流</a></li>
+                            <li><a href="<?php echo U( 'Index/AcademicExchange' );?>">学术交流</a></li>
                             <li><a href="<?php echo U( 'Index/DataTool' );?>">数据/工具</a></li>
                         </ul>
                     </div>
@@ -51,27 +57,31 @@
         <div class="row">
             <div class="sidebar panel panel-primary col-md-2 nav nav-sidebar ">
                 <div class="panel-body">
-                    
-                    <?php if(is_array($conferenceName)): foreach($conferenceName as $key=>$value): ?><h4><?php echo ($key); ?></h4>
+                    <!-- 显示页面左侧部分 -->
+                    <?php if(is_array($creature)): foreach($creature as $key=>$value): ?><h4><?php echo ($value['creatureName']); ?></h4>
                         <div class="list-group">
-                            <?php if(is_array($value)): foreach($value as $key=>$v): ?><a class="list-group-item" href="<?php echo U( 'Index/AcademicExchange/index' , array( 'getConferenceName' =>$v ) );?>"><?php echo ($v); ?></a><?php endforeach; endif; ?>
+                            <?php if(is_array($value['speciesproject'])): foreach($value['speciesproject'] as $key=>$v): ?><a class="list-group-item" href="<?php echo U( 'Index/ProjectProgress/index' , array( 'getSpeciesProjectId' =>$v['speciesProjectId'] ) );?>"><?php echo ($v['speciesName']); ?></a><?php endforeach; endif; ?>
                         </div><?php endforeach; endif; ?>
-                    
+
                 </div>
             </div>
             <!-- main block  -->
             <div class="container-fluid">
                 <div class="col-md-offset-2 panel panel-default ">
                     <div class="panel-body ">
-                        <div>
-                            <h1 class="text-center"><?php echo ($conferenceBody['conferenceName']); ?></h1>
-                            <p><?php echo ($conferenceBody['conferenceInfo']); ?></p>
-                        </div>
+                        <!-- 项目进展  -->
+                            <div class="col-md-10 hiddenStyle" id="progress">
+                                <h1 class="text-center"><?php echo ($speciesBody['speciesName']); ?>的项目进展</h1>
+                                <p><?php echo ($speciesBody['projectProgress']); ?></p>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <?php  if( $speciesBody ){ echo "<script type='text/javascript'>showDetail('progress')</script>"; } ?>
+    
 </body>
 
 </html>

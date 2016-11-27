@@ -1,6 +1,6 @@
 <?php
 /*
- * 显示新闻动态页控制器
+ * 显示学术交流页控制器
  */
 class AcademicExchangeAction extends Action
 {
@@ -30,8 +30,7 @@ class AcademicExchangeAction extends Action
         //如果点击会议的标题则在右侧显示会议的内容
         //获取GET参数
         $getConferenceName = I( 'getConferenceName' , '' , 'htmlspecialchars' );
-        $getConferenceName = $_GET['getConferenceName'];
-        if( $getConferenceName != NULL )
+        if( $getConferenceName )
         {
             $conferenceBody = M( 'academicconference' )->where( array( 'conferenceName' =>$getConferenceName ) )->find();
             $this->conferenceBody = $conferenceBody;

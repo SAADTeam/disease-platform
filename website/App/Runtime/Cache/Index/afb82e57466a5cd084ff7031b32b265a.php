@@ -1,11 +1,11 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>关于项目-重要热带病传播入侵媒介及病原体生物学特性研究平台</title>
+    <title>新闻动态-重要热带病传播入侵媒介及病原体生物学特性研究平台</title>
     <!-- Bootstrap -->
     <!-- CSS -->
     <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
@@ -17,18 +17,14 @@
     <style type="text/css">
     body {
         padding-top: 70px;
-        padding-left: 20px;
+        padding-left: 10px;
     }
     </style>
 </head>
 
 <body>
-    
-    <!--sidebar-->
-    <div class="container-fluid">
-        
-        <!--fixed nav-->
-            <nav class="navbar navbar-inverse" role="navigation">
+    <!--fixed nav-->
+    <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">中山大学研究平台</a>
                     </div>
@@ -38,37 +34,22 @@
                             <li><a href="<?php echo U( 'Index/AboutProject' );?>">关于项目</a></li>
                             <li><a href="<?php echo U( 'Index/ResearchTeam' );?>">研究团队</a></li>
                             <li><a href="<?php echo U( 'Index/News' );?>">新闻动态</a></li>
-                            <li><a href="<?php echo U( 'Index/Notification' );?>">通知公告</a></li>
+                            <li class="active"><a href="<?php echo U( 'Index/Notification' );?>">通知公告</a></li>
                             <li><a href="<?php echo U( 'Index/ProjectProgress' );?>">项目进展</a></li>
                             <li><a href="<?php echo U( 'Index/PublishArticle' );?>">发表文章</a></li>
-                            <li class="active"><a href="<?php echo U( 'Index/AcademicExchange' );?>">学术交流</a></li>
+                            <li><a href="<?php echo U( 'Index/AcademicExchange' );?>">学术交流</a></li>
                             <li><a href="<?php echo U( 'Index/DataTool' );?>">数据/工具</a></li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
                 </nav>
-        
-        <div class="row">
-            <div class="sidebar panel panel-primary col-md-2 nav nav-sidebar ">
-                <div class="panel-body">
-                    
-                    <?php if(is_array($conferenceName)): foreach($conferenceName as $key=>$value): ?><h4><?php echo ($key); ?></h4>
-                        <div class="list-group">
-                            <?php if(is_array($value)): foreach($value as $key=>$v): ?><a class="list-group-item" href="<?php echo U( 'Index/AcademicExchange/index' , array( 'getConferenceName' =>$v ) );?>"><?php echo ($v); ?></a><?php endforeach; endif; ?>
-                        </div><?php endforeach; endif; ?>
-                    
-                </div>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title text-center"><?php echo ($notificationBody['notificationTitle']); ?></div>
             </div>
-            <!-- main block  -->
-            <div class="container-fluid">
-                <div class="col-md-offset-2 panel panel-default ">
-                    <div class="panel-body ">
-                        <div>
-                            <h1 class="text-center"><?php echo ($conferenceBody['conferenceName']); ?></h1>
-                            <p><?php echo ($conferenceBody['conferenceInfo']); ?></p>
-                        </div>
-                    </div>
-                </div>
+            <div class="panel-body text-center" style="height:600px;">
+                <?php echo ($notificationBody['notificationContent']); ?>
             </div>
         </div>
     </div>
