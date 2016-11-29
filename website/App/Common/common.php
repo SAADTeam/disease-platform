@@ -23,5 +23,19 @@ function valid_email($address) {
       return false;
 }
 
+function getUserLevel( $type )
+{
+    if( $type == 'superAdminUser' )
+        return 5;
+    else if( $type == 'adminUser' )
+        return 4;
+    else if( $type == 'labUser' )
+        return 3;
+    else if( $type == 'registerUser' )
+        return 2;
+    else if( $type == 'anonymousUser' )
+        return 1;
+}
+
 ?>
 

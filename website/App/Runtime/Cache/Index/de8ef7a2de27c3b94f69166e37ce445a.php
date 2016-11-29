@@ -23,6 +23,8 @@
 </head>
 
 <body>
+    
+    <div class="container">
     <!--fixed nav-->
             <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
@@ -43,6 +45,8 @@
                     </div>
                     <!--/.nav-collapse -->
                 </nav>
+    
+    
     <div class="list-group col-md-2">
         <a href="<?php echo U( 'Index/DataTool/index' , array( 'getType'=>'data' , 'getSpeciesProjectId'=>$speciesProjectId ) );?>" class="list-group-item">团队数据共享</a>
         <a href="<?php echo U( 'Index/DataTool/index' , array( 'getType'=>'database' , 'getSpeciesProjectId'=>$speciesProjectId ) );?>" class="list-group-item">站外数据库</a>
@@ -50,10 +54,10 @@
     </div>
     
     <?php $count = 1; ?>
-    <div class="container">
+    
         <div>
             <h2>数据链接</h2>
-            <?php if(is_array($dataToolLink)): foreach($dataToolLink as $key=>$v): ?><a href="http://<?php echo ($v['dataToolLinkUrl']); ?>"><?php echo ($count++); ?>&nbsp;&nbsp;<?php echo ($v['dataToolLinkName']); ?></a>
+            <?php if(is_array($dataToolLink)): foreach($dataToolLink as $key=>$v): ?><a href="<?php echo ($v['dataToolLinkUrl']); ?>"><?php echo ($count++); ?>&nbsp;&nbsp;<?php echo ($v['dataToolLinkName']); ?></a>
                 <h3>简介</h3>
                 <p><?php echo ($v['dataToolLinkInfo']); ?></p><?php endforeach; endif; ?>
         </div>

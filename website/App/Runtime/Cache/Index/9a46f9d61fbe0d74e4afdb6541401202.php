@@ -22,6 +22,8 @@
 </head>
 
 <body>
+    
+    <div class="container">
     <!--fixed nav-->
     <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
@@ -42,7 +44,7 @@
                     </div>
                     <!--/.nav-collapse -->
                 </nav>
-    <div class="container">
+    
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <div class="panel-title text-center"><?php echo ($newsBody['newsTitle']); ?></div>

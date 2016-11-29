@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -55,21 +55,21 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 dashboard-sidebar">
                 <ul class="nav nav-sidebar">
-                    <li><a href="{:U( '/Admin/Index' )}">用户</a></li>
-                    <li><a href="{:U( '/Admin/AddNews' )}">新闻</a></li>
-                    <li><a href="{:U( '/Admin/AddNotification' )}">通知</a></li>
-                    <li><a href="{:U( '/Admin/AddConference' )}">学术会议</a></li>
-                    <li><a href="{:U( '/Admin/AddCreature' )}">生物</a></li>
-                    <li><a href="{:U( '/Admin/AddSpeciesProject' )}">物种项目</a></li>
-                    <li><a href="{:U( '/Admin/AddSpeciesRelativeArticle' )}">生物相关文章</a></li>
-                    <li class="active"><a href="{:U( '/Admin/AddResearchTeam' )}">研究团队</a></li>
-                    <li><a href="{:U( '/Admin/AddPublishArticle' )}">发表文章</a></li>
-                    <li><a href="{:U( '/Admin/AddDataToolLink' )}">数据工具链接</a></li>
+                    <li><a href="<?php echo U( '/Admin/Index' );?>">用户</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddNews' );?>">新闻</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddNotification' );?>">通知</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddConference' );?>">学术会议</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddCreature' );?>">生物</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddSpeciesProject' );?>">物种项目</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddSpeciesRelativeArticle' );?>">生物相关文章</a></li>
+                    <li class="active"><a href="<?php echo U( '/Admin/AddResearchTeam' );?>">研究团队</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddPublishArticle' );?>">发表文章</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddDataToolLink' );?>">数据工具链接</a></li>
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h2 class="sub-header">研究团队</h2>
-                <form class="form-horizontal" role="form" method="post" action="{:U( 'Admin/AddResearchTeam/addResearchTeam' )}">
+                <form class="form-horizontal" role="form" method="post" action="<?php echo U( 'Admin/AddResearchTeam/addResearchTeam' );?>">
                     <div class="form-group">
                         <label for=“ID” class="col-sm-2 col-md-1 control-label">ID</label>
                         <div class="col-sm-4 col-md-3">

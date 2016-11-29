@@ -48,7 +48,7 @@
 <body>
     
     <!--sidebar-->
-    <div class="container-fluid">
+    <div class="container">
         <!-- Fixed navbar -->
                 <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
@@ -124,7 +124,7 @@
                                     <?php if(is_array($speciesBody['publisharticle'])): foreach($speciesBody['publisharticle'] as $key=>$v): ?><li>
                                                 <p class="list-num inline-block"><?php echo ($count++); ?></p>
                                                 <div class="inline-block">
-                                                    <a href="http://<?php echo ($v['publishArticlelink']); ?>"><?php echo ($v['publishArticleTitle']); ?></a>
+                                                    <a href="<?php echo ($v['publishArticlelink']); ?>"><?php echo ($v['publishArticleTitle']); ?></a>
                                                     <p class="paper-authors"><?php echo ($v['author']); ?></p>
                                                 </div>
                                             </li><?php endforeach; endif; ?>
@@ -140,7 +140,7 @@
                                     <?php if(is_array($speciesBody['speciesrelativearticle'])): foreach($speciesBody['speciesrelativearticle'] as $key=>$v): ?><li>
                                                 <p class="list-num inline-block"><?php echo ($count++); ?></p>
                                                 <div class="inline-block">
-                                                    <a href="http://<?php echo ($v['relativeArticleLink']); ?>"><?php echo ($v['relativeArticleTitle']); ?></a>
+                                                    <a href="<?php echo ($v['relativeArticleLink']); ?>"><?php echo ($v['relativeArticleTitle']); ?></a>
                                                 </div>
                                             </li><?php endforeach; endif; ?>
                                 </ul>

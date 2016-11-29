@@ -69,7 +69,7 @@
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h2 class="sub-header">数据工具链接</h2>
-                <form class="form-horizontal" role="form">
+                <form class="form-horizontal" role="form" method="post" action="{:U( 'Admin/AddDataToolLink/addDataToolLink' )}">
                     <div class="form-group">
                         <label for=“ID” class="col-sm-2 col-md-1 control-label">ID</label>
                         <div class="col-sm-4 col-md-3">
@@ -79,43 +79,45 @@
                     <div class="form-group">
                         <label for="inputName" class="col-sm-2 col-md-1 control-label">名称</label>
                         <div class="col-sm-4 col-md-3">
-                            <input type="text" class="form-control" id="inputName" placeholder="">
+                            <input type="text" class="form-control" id="inputName" placeholder="" name="dataToolLinkName">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputType" class="col-sm-2 col-md-1 control-label">用户类型</label>
+                        <label for="inputType" class="col-sm-2 col-md-1 control-label">类型</label>
                         <div class="col-sm-4 col-md-3">
-                            <select class="form-control" id="inputType">
-                                <option>超级管理员</option>
-                                <option>普通管理员</option>
-                                <option>实验室用户</option>
-                                <option>注册用户</option>
-                                <option>匿名用户</option>
+                            <select class="form-control" id="inputType" name="dataToolLinkType">
+                                <option value="data">源数据链接</option>
+                                <option value="database">站外数据库链接</option>
+                                <option value="analysis">常用分析工具链接</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputLink" class="col-sm-2 col-md-1 control-label">链接</label>
                         <div class="col-sm-10">
-                            <input type="url" class="form-control" id="inputLink" placeholder="">
+                            <input type="url" class="form-control" id="inputLink" placeholder="" name="dataToolLinkUrl">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputInfo" class="col-sm-2 col-md-1 control-label">信息</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" rows="8" id="inputInfo" placeholder=""></textarea>
+                            <textarea class="form-control" rows="8" id="inputInfo" placeholder="" name="dataToolLinkInfo"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputProjectID" class="col-sm-2 col-md-1 control-label">团队ID</label>
+                        <label for="inputProjectID" class="col-sm-2 col-md-1 control-label">所属物种项目</label>
                         <div class="col-sm-4 col-md-3">
-                            <input type="number" class="form-control" id="inputProjectID">
+                            <select class="form-control" id="inputType"  name="speciesProjectId">
+                                <foreach name="speciesProject" item="v">
+                                    <option value="{$key}">{$v}</option>
+                                </foreach>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-md-offset-1 col-sm-10">
                             <button type="submit" class="btn btn-primary">保存</button>
-                            <button type="submit" class="btn btn-warning">删除</button>
+                            <button class="btn btn-warning">删除</button>
                         </div>
                     </div>
                 </form>

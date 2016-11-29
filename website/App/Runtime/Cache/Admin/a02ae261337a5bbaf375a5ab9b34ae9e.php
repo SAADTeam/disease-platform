@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -55,21 +55,21 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 dashboard-sidebar">
                 <ul class="nav nav-sidebar">
-                    <li><a href="{:U( '/Admin/Index' )}">用户</a></li>
-                    <li><a href="{:U( '/Admin/AddNews' )}">新闻</a></li>
-                    <li><a href="{:U( '/Admin/AddNotification' )}">通知</a></li>
-                    <li><a href="{:U( '/Admin/AddConference' )}">学术会议</a></li>
-                    <li><a href="{:U( '/Admin/AddCreature' )}">生物</a></li>
-                    <li><a href="{:U( '/Admin/AddSpeciesProject' )}">物种项目</a></li>
-                    <li><a href="{:U( '/Admin/AddSpeciesRelativeArticle' )}">生物相关文章</a></li>
-                    <li class="active"><a href="{:U( '/Admin/AddResearchTeam' )}">研究团队</a></li>
-                    <li><a href="{:U( '/Admin/AddPublishArticle' )}">发表文章</a></li>
-                    <li><a href="{:U( '/Admin/AddDataToolLink' )}">数据工具链接</a></li>
+                    <li><a href="<?php echo U( '/Admin/Index' );?>">用户</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddNews' );?>">新闻</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddNotification' );?>">通知</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddConference' );?>">学术会议</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddCreature' );?>">生物</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddSpeciesProject' );?>">物种项目</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddSpeciesRelativeArticle' );?>">生物相关文章</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddResearchTeam' );?>">研究团队</a></li>
+                    <li class="active"><a href="<?php echo U( '/Admin/AddPublishArticle' );?>">发表文章</a></li>
+                    <li><a href="<?php echo U( '/Admin/AddDataToolLink' );?>">数据工具链接</a></li>
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h2 class="sub-header">研究团队</h2>
-                <form class="form-horizontal" role="form" method="post" action="{:U( 'Admin/AddResearchTeam/addResearchTeam' )}">
+                <h2 class="sub-header">发表文章</h2>
+                <form class="form-horizontal" role="form" method="post" action="<?php echo U( 'Admin/AddPublishArticle/addPublishArticle' );?>">
                     <div class="form-group">
                         <label for=“ID” class="col-sm-2 col-md-1 control-label">ID</label>
                         <div class="col-sm-4 col-md-3">
@@ -77,36 +77,35 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputType" class="col-sm-2 col-md-1 control-label">团队类型</label>
+                        <label for="inputName" class="col-sm-2 col-md-1 control-label">标题</label>
                         <div class="col-sm-4 col-md-3">
-                            <select class="form-control" id="inputType"  name="researchTeamType">
-                                    <option value="main">主要负责团队</option>
-                                    <option value="participate">参与团队</option>
-                            </select>
+                            <input type="text" class="form-control" id="inputName" placeholder="" name="publishArticleTitle">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputName" class="col-sm-2 col-md-1 control-label">团队名称</label>
+                        <label for="inputAuthor" class="col-sm-2 col-md-1 control-label">作者</label>
                         <div class="col-sm-4 col-md-3">
-                            <input type="text" class="form-control" id="inputName" placeholder="" name="researchTeamName">
+                            <input type="text" class="form-control" id="inputAuthor" placeholder="" name="author">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputDirection" class="col-sm-2 col-md-1 control-label">研究方向</label>
+                        <label for="inputYear" class="col-sm-2 col-md-1 control-label">年份</label>
                         <div class="col-sm-4 col-md-3">
-                            <input type="text" class="form-control" id="inputDirection" placeholder="" name="researchTeamDirection">
+                            <input type="number" class="form-control" id="inputYear" placeholder="" name="publishYear">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputTask" class="col-sm-2 col-md-1 control-label">团队任务</label>
-                        <div class="col-sm-4 col-md-3">
-                            <input type="text" class="form-control" id="inputTask" placeholder="" name="researchTeamTask">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputInfo" class="col-sm-2 col-md-1 control-label">团队信息</label>
+                        <label for="inputLink" class="col-sm-2 col-md-1 control-label">链接</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" rows="8" id="inputInfo" placeholder="" name="researchTeamInfo"></textarea>
+                            <input type="url" class="form-control" id="inputLink" placeholder="" name="publishArticlelink">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputProjectID" class="col-sm-2 col-md-1 control-label">所属物种项目</label>
+                        <div class="col-sm-4 col-md-3">
+                            <select class="form-control" id="inputType"  name="speciesProjectId">
+                                <?php if(is_array($speciesProject)): foreach($speciesProject as $key=>$v): ?><option value="<?php echo ($key); ?>"><?php echo ($v); ?></option><?php endforeach; endif; ?>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">

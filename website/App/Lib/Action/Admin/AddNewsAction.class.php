@@ -18,6 +18,10 @@ class AddNewsAction extends Action
             $this->error('输入项不能为空！');
         }
         
+        if( getUserLevel( $_SESSION['userType'] )<3 ){
+            $this->error('对不起，您没有权限进行此操作！');
+        }
+        
         //获取表单数据
         $newsTitle = I( 'newsTitle' , '' , 'htmlspecialchars' );
         $newsContent = I( 'newsContent' , '' , 'htmlspecialchars' );

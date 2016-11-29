@@ -87,7 +87,7 @@
                     <?php if(is_array($value)): foreach($value as $key=>$v): ?><li>
                         <p class="list-num inline-block"><?php echo ($count++); ?></p>
                         <div class="inline-block">
-                            <a href="http://<?php echo ($v['publishArticlelink']); ?>"><?php echo ($v['publishArticleTitle']); ?></a>
+                            <a href="<?php echo ($v['publishArticlelink']); ?>"><?php echo ($v['publishArticleTitle']); ?></a>
                             <p class="paper-authors"><?php echo ($v['author']); ?></p>
                         </div>
                     </li><?php endforeach; endif; ?>

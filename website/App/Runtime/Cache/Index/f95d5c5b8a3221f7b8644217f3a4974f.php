@@ -25,7 +25,7 @@
 <body>
     
     <!--sidebar-->
-    <div class="container-fluid">
+    <div class="container">
         
         <!--fixed nav-->
             <nav class="navbar navbar-inverse" role="navigation">
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <!-- main block  -->
-            <div class="container-fluid">
+            <div class="container">
                 <div class="col-md-offset-2 panel panel-default ">
                     <div class="panel-body ">
                         <div>

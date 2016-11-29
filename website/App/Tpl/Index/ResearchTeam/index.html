@@ -44,6 +44,8 @@
 </head>
 
 <body>
+    
+    <div class="container">
     <!--fixed nav-->
             <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
@@ -114,7 +116,7 @@
                         <li>
                             <p class="list-num inline-block">{$count++}</p>
                                 <div class="inline-block">
-                                         <a href="http://{$v['publishArticlelink']}">{$v['publishArticleTitle']}</a>
+                                         <a href="{$v['publishArticlelink']}">{$v['publishArticleTitle']}</a>
                                          <p class="paper-authors">{$v['author']}</p>
                                 </div>                
                          </li>                   
@@ -137,6 +139,8 @@
         </div>
         
     </div>
+    
+  </div>
     
         <?php 
     if( $researchTeamInfo ){

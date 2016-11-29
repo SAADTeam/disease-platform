@@ -48,7 +48,7 @@
 <body>
     
     <!--sidebar-->
-    <div class="container-fluid">
+    <div class="container">
         <!-- Fixed navbar -->
                 <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
@@ -129,7 +129,7 @@
                                             <li>
                                                 <p class="list-num inline-block">{$count++}</p>
                                                 <div class="inline-block">
-                                                    <a href="http://{$v['publishArticlelink']}">{$v['publishArticleTitle']}</a>
+                                                    <a href="{$v['publishArticlelink']}">{$v['publishArticleTitle']}</a>
                                                     <p class="paper-authors">{$v['author']}</p>
                                                 </div>
                                             </li>
@@ -147,7 +147,7 @@
                                             <li>
                                                 <p class="list-num inline-block">{$count++}</p>
                                                 <div class="inline-block">
-                                                    <a href="http://{$v['relativeArticleLink']}">{$v['relativeArticleTitle']}</a>
+                                                    <a href="{$v['relativeArticleLink']}">{$v['relativeArticleTitle']}</a>
                                                 </div>
                                             </li>
                                     </foreach>

@@ -1,15 +1,21 @@
 <?php
 /*
- * 新增用户页控制器
+ * 后台登录页控制器
  */
 class IndexAction extends Action
 {
     public function index()
     {
-        $this->display();
+        //验证是否已经登录
+        if( $_SESSION['userId'] && $_SESSION['userName'] && $_SESSION['userType'] ){
+            $this->redirect( 'Admin/AddUser/index' );
+        }
+        else{
+            $this->display();
+        }
     }
     
-    public function addUser()
+    public function login()
     {
         if( !IS_POST ){
             halt('页面不存在');
@@ -20,34 +26,20 @@ class IndexAction extends Action
         
         //获取表单数据
         $userName = I( 'userName' , '' , 'htmlspecialchars' );
-        $password = I( 'password' , '' , 'htmlspecialchars' );
-        $userInfo = I( 'userInfo' , '' , 'htmlspecialchars' );
-        $userResearchDirection = I( 'userResearchDirection' , '' , 'htmlspecialchars' );
-        $userResearchResult = I( 'userResearchResult' , '' , 'htmlspecialchars' );
-        $userType = I( 'userType' , '' , 'htmlspecialchars' );
+        $password = I( 'password' , '' , 'md5' );
         
-        //检查用户名是否已经存在
-        $ans = M('user')->where( 'userName=' . $userName)->find();
-        if( $ans ){
-            $this->error('用户名已经存在！');
-        }
-
-        $data = array(
-            'userName' => $userName ,
-            'password' => md5($password) ,
-            'userType' => $userType ,
-            'userInfo' => $userInfo ,
-            'userResearchDirection' => $userResearchDirection ,
-            'userResearchResult' => $userResearchResult
-        );
-        
-        if ( M('user')->data($data)->add() ) {
-            $this->success( '新增用户成功！', U( 'Admin/Index/index' ) );
+        //验证用户名和密码是否正确，若正确，则写入session
+        $user = M( 'user' )->where( array( 'userName' => $userName , 'password' =>$password  ) )->find();
+        if( !$user ){
+            $this->error('用户名或密码错误！');
         }
         else{
-            $this->error( '新增用户遇到异常失败，请重试！' );
+           session( 'userId' , $user['userId'] );
+           session( 'userName' , $user['userName'] );
+           session( 'userType' , $user['userType'] );
+           
+           $this->success( '登录成功！', U( 'Admin/AddUser/index' ) );
         }
     }
- 
 }
 

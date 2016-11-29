@@ -44,6 +44,8 @@
 </head>
 
 <body>
+    
+    <div class="container">
     <!--fixed nav-->
             <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
@@ -107,7 +109,7 @@
                     <?php if(is_array($researchTeamInfo['publisharticle'])): foreach($researchTeamInfo['publisharticle'] as $key=>$v): ?><li>
                             <p class="list-num inline-block"><?php echo ($count++); ?></p>
                                 <div class="inline-block">
-                                         <a href="http://<?php echo ($v['publishArticlelink']); ?>"><?php echo ($v['publishArticleTitle']); ?></a>
+                                         <a href="<?php echo ($v['publishArticlelink']); ?>"><?php echo ($v['publishArticleTitle']); ?></a>
                                          <p class="paper-authors"><?php echo ($v['author']); ?></p>
                                 </div>                
                          </li><?php endforeach; endif; ?>                                                                          
@@ -129,6 +131,8 @@
         </div>
         
     </div>
+    
+  </div>
     
         <?php  if( $researchTeamInfo ){ echo "<script type='text/javascript'>showDetail('researchTeamBlock')</script>"; } else if( $userInfo ){ echo "<script type='text/javascript'>showDetail('userBlock')</script>"; } ?>
     

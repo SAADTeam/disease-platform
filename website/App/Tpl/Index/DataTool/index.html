@@ -23,6 +23,8 @@
 </head>
 
 <body>
+    
+    <div class="container">
     <!--fixed nav-->
             <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
@@ -43,6 +45,8 @@
                     </div>
                     <!--/.nav-collapse -->
                 </nav>
+    
+    
     <div class="list-group col-md-2">
         <a href="{:U( 'Index/DataTool/index' , array( 'getType'=>'data' , 'getSpeciesProjectId'=>$speciesProjectId ) )}" class="list-group-item">团队数据共享</a>
         <a href="{:U( 'Index/DataTool/index' , array( 'getType'=>'database' , 'getSpeciesProjectId'=>$speciesProjectId ) )}" class="list-group-item">站外数据库</a>
@@ -50,11 +54,11 @@
     </div>
     
     <?php $count = 1;  ?>
-    <div class="container">
+    
         <div>
             <h2>数据链接</h2>
             <foreach name="dataToolLink" item="v">
-                    <a href="http://{$v['dataToolLinkUrl']}">{$count++}&nbsp;&nbsp;{$v['dataToolLinkName']}</a>
+                    <a href="{$v['dataToolLinkUrl']}">{$count++}&nbsp;&nbsp;{$v['dataToolLinkName']}</a>
                 <h3>简介</h3>
                 <p>{$v['dataToolLinkInfo']}</p>
             </foreach>

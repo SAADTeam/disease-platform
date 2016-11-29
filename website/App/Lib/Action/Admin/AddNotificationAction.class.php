@@ -18,6 +18,10 @@ class AddNotificationAction extends Action
             $this->error('输入项不能为空！');
         }
         
+        if( getUserLevel( $_SESSION['userType'] )<3 ){
+            $this->error('对不起，您没有权限进行此操作！');
+        }
+        
         //获取表单数据
         $notificationTitle = I( 'notificationTitle' , '' , 'htmlspecialchars' );
         $notificationContent = I( 'notificationContent' , '' , 'htmlspecialchars' );

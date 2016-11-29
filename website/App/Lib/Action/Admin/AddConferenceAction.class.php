@@ -18,6 +18,10 @@ class AddConferenceAction extends Action
             $this->error('输入项不能为空！');
         }
         
+        if( getUserLevel( $_SESSION['userType'] )<2 ){
+            $this->error('对不起，您没有权限进行此操作！');
+        }
+        
         //获取表单数据
         $conferenceName = I( 'conferenceName' , '' , 'htmlspecialchars' );
         $conferenceYear = I( 'conferenceYear' , '' , 'htmlspecialchars' );

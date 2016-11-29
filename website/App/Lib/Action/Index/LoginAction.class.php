@@ -30,6 +30,7 @@ class LoginAction extends Action
         else{
            session( 'userId' , $user['userId'] );
            session( 'userName' , $user['userName'] );
+           session( 'userType' , $user['userType'] );
            
            $this->success( '登录成功！', U( 'Index/Index/index' ) );
         }
