@@ -28,12 +28,13 @@ class AddNewsAction extends Action
             'newsContent' => $newsContent ,
             'newsDate' => time()
         );
-        $newsId = M('news')->data($data)->add();
-        if ( !$newsId ) {
+        if( M('news')->data($data)->add() )
+        {
+            $this->success( '新增新闻动态成功！', U( 'Admin/AddNews/index' ) );
+        }
+        else{
             $this->error( '发布新闻动态遇到异常失败，请重试！' );
         }
-        
-        $this->redirect( 'Index/News/index' );
     }
  
 }

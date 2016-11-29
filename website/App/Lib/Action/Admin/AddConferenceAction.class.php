@@ -29,12 +29,13 @@ class AddConferenceAction extends Action
             'conferenceYear' => $conferenceYear ,
             'conferenceInfo' => $conferenceInfo
         );
-        $conferenceId = M('academicconference')->data($data)->add();
-        if ( !$conferenceId ) {
-            $this->error( '发布新闻动态遇到异常失败，请重试！' );
+        if( M('academicconference')->data($data)->add() )
+        {
+            $this->success( '新增学术会议成功！', U( 'Admin/AddConference/index' ) );
         }
-        
-        $this->redirect( 'Index/AcademicExchange/index' );
+        else{
+            $this->error( '新增学术会议遇到异常失败，请重试！' );
+        }
     }
  
 }

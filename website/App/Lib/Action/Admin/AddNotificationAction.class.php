@@ -28,12 +28,12 @@ class AddNotificationAction extends Action
             'notificationContent' => $notificationContent ,
             'notificationDate' => time()
         );
-        $notificationId = M('notification')->data($data)->add();
-        if ( !$notificationId ) {
+        if( M('notification')->data($data)->add() ){
+            $this->success( '新增通知公告成功！', U( 'Admin/AddNotification/index' ) );
+        }
+        else{
             $this->error( '发布通知公告遇到异常失败，请重试！' );
         }
-        
-        $this->redirect( 'Index/Notification/index' );
     }
  
 }

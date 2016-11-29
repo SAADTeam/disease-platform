@@ -3,10 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Software/WampServer64/www/disease-platform/App/Lib/Action/Index/LoginAction.class.php</file>
-            <file>file:/D:/Software/WampServer64/www/disease-platform/App/Tpl/Index/Login/index.html</file>
-            <file>file:/D:/Software/WampServer64/www/disease-platform/App/Tpl/Index/Index/index.html</file>
-            <file>file:/D:/Software/WampServer64/www/disease-platform/App/Lib/Action/Index/RegisterAction.class.php</file>
+            <file>file:/D:/Software/WampServer64/www/disease-platform/App/Lib/Action/Admin/AddNewsAction.class.php</file>
+            <file>file:/D:/Software/WampServer64/www/disease-platform/App/Tpl/Admin/AddNews/index.html</file>
         </group>
     </open-files>
 </project-private>

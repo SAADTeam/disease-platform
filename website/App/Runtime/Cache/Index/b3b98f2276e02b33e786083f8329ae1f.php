@@ -26,12 +26,12 @@
 
 <body>
     <div class="container">
-        <form class="form-signin" role="form">
+        <form class="form-signin" role="form" action="<?php echo U('Index/Login/login');?>" method="post">
             <h2 class="form-signin-heading">登录</h2>
             Username
-            <input type="text" class="form-control" placeholder="Username" required="" autofocus="">
+            <input type="text"  name="userName" class="form-control" placeholder="Username" >
             Password
-            <input type="password" class="form-control" placeholder="Password" required="">
+            <input type="password"  name="password" class="form-control" placeholder="Password" required="">
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>
     </div>
