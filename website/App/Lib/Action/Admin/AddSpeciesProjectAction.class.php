@@ -9,7 +9,13 @@ class AddSpeciesProjectAction extends Action
         //寻找还没有任何物种项目的研究团队
         $researchTeamId1 = M( 'researchteam' )->getField( 'researchTeamId' , true );
         $researchTeamId2 = M( 'speciesproject' )->getField( 'researchTeam_researchTeamId' , true );
-        $researchTeamId_diff = array_diff($researchTeamId1, $researchTeamId2);
+        if( $researchTeamId2 ){
+            $researchTeamId_diff = array_diff($researchTeamId1, $researchTeamId2);
+        }
+        else{
+            $researchTeamId_diff = $researchTeamId1;
+        }
+        
         $condition = array( 
             'researchTeamId' => array( 'in' , $researchTeamId_diff ) 
             );

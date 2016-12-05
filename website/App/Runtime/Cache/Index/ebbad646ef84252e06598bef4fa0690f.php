@@ -51,7 +51,7 @@
         </nav>
         <!-- content -->
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-8">
                 <h3>项目简介</h3>
                 <p>
                     “保障人类健康”是我国生物安全优先考虑的战略重点之一。医学媒介生物及其相关病原体的入侵可引起如登革 热、寨卡病毒病、疟疾、锥虫病、血吸虫病、广州管圆线虫病等重要热带病的流行、疫情暴发与扩散，甚至成为 重大公共卫生安全事件，对人类健康和社会稳定构成极大威胁。
@@ -77,7 +77,7 @@
                 <p>本项目的完成，将丰富我国重要热带病入侵媒介螺类（福寿螺、褐云玛瑙螺、双脐螺）和伊蚊（埃及伊蚊和白 纹伊蚊）入侵、扩散和传病相关的生物学特性，获得一批创新性成果（高水平论文、专著、专利和指南等），提 升我国入侵媒介生物领域的研究水平，提高国家生物安全科技支撑能力。
                 </p>
             </div>
-            <div class="col-md-5 panel panel-primary">
+            <div class="col-md-4 panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">新闻动态</h3>
                 </div>
@@ -85,9 +85,10 @@
                     <?php if(is_array($latestNews)): foreach($latestNews as $key=>$v): ?><a target="_blank" href="<?php echo U( 'Index/News/detail' , array( 'newsId' =>$v['newsId'] ) );?>"><?php echo ($v['newsTitle']); ?></a>
                         <br />
                         <br /><?php endforeach; endif; ?>
+                    <a class="btn btn-primary" href="<?php echo U( 'Index/News' );?>" role="button">More</a>
                 </div>
             </div>
-            <div class="col-md-5 panel panel-success">
+            <div class="col-md-4 panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">通知公告</h3>
                 </div>
@@ -95,9 +96,31 @@
                     <?php if(is_array($latestNotification)): foreach($latestNotification as $key=>$v): ?><a target="_blank" href="<?php echo U( 'Index/Notification/detail' , array( 'notificationId' =>$v['notificationId'] ) );?>"><?php echo ($v['notificationTitle']); ?></a>
                         <br />
                         <br /><?php endforeach; endif; ?>
+                    <a class="btn btn-success" href="<?php echo U( 'Index/Notification' );?>" role="button">More</a>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>合作单位图标：</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="__PUBLIC__/image/1.gif" class="img-responsive" alt="logo image">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="__PUBLIC__/image/2.jpg" class="img-responsive" alt="logo image">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="__PUBLIC__/image/3.png" class="img-responsive" alt="logo image">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="__PUBLIC__/image/4.jpg" class="img-responsive" alt="logo image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h4>推广公众号二维码：</h4>
+                <img src="__PUBLIC__/image/QRcode.png" class="img-responsive" alt="logo image">
             </div>
         </div>
         

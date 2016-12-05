@@ -6,6 +6,9 @@ class RegisterAction extends Action
 {
     public function index()
     {
+        $researchTeam = M( 'researchteam' )->getField( 'researchTeamId , researchTeamName' );
+        $this->researchTeam = $researchTeam;
+        
         $this->display();
     }
 
@@ -25,6 +28,10 @@ class RegisterAction extends Action
         $userInfo = I( 'userInfo' , '' , 'htmlspecialchars' );
         $userResearchDirection = I( 'userResearchDirection' , '' , 'htmlspecialchars' );
         $userResearchResult = I( 'userResearchResult' , '' , 'htmlspecialchars' );
+        $researchTeamId = I( 'researchTeamId' , '' , 'htmlspecialchars' );
+        
+        if( $researchTeamId=='null' || $researchTeamId=='' )
+            $researchTeamId = null;
         
         //检查用户名是否已经存在
         $ans = M('user')->where( 'userName=' . $userName)->find();
@@ -43,11 +50,15 @@ class RegisterAction extends Action
             'userType' => 'registerUser' ,
             'userInfo' => $userInfo ,
             'userResearchDirection' => $userResearchDirection ,
-            'userResearchResult' => $userResearchResult
+            'userResearchResult' => $userResearchResult ,
+            'researchTeam_researchTeamId' => $researchTeamId
         );
         
         if ( M('user')->data($data)->add() ) {
             $this->success( '注册成功！', U( 'Index/Index/index' ) );
+        }
+        else{
+            $this->error( '注册遇到异常失败，请重试！' );
         }
     }
 }

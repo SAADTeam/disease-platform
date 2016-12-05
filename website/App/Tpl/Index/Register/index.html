@@ -42,6 +42,13 @@
             Research Result
             <input type="text"  name="userResearchResult" class="form-control" placeholder="Research Result" required="">
             <br>
+            研究团队
+            <select class="form-control" id="inputType"  name="researchTeamId">
+                      <option value="">无</option>
+                      <foreach name="researchTeam" item="v">
+                               <option value="{$key}">{$v}</option>
+                      </foreach>      
+            </select>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
         </form>
     </div>

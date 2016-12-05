@@ -101,6 +101,15 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="inputType" class="col-sm-2 col-md-1 control-label">研究团队</label>
+                        <div class="col-sm-4 col-md-3">
+                            <select class="form-control" id="inputType"  name="researchTeamId">
+                                    <option value="">无</option>
+                                    <?php if(is_array($researchTeam)): foreach($researchTeam as $key=>$v): ?><option value="<?php echo ($key); ?>"><?php echo ($v); ?></option><?php endforeach; endif; ?>      
+                          </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label for="inputDirection" class="col-sm-2 col-md-1 control-label">研究方向</label>
                         <div class="col-sm-4 col-md-3">
                             <input type="text" class="form-control" id="inputDirection" placeholder=""  name="userResearchDirection">
