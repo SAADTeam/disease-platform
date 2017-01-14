@@ -44,7 +44,7 @@
             <br>
             研究团队
             <select class="form-control" id="inputType"  name="researchTeamId">
-                      <option value="null">无</option>
+                      <option value="">无</option>
                       <?php if(is_array($researchTeam)): foreach($researchTeam as $key=>$v): ?><option value="<?php echo ($key); ?>"><?php echo ($v); ?></option><?php endforeach; endif; ?>      
             </select>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>

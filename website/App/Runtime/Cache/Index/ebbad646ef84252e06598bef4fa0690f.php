@@ -44,7 +44,8 @@
                     <li><a href="<?php echo U( 'Index/DataTool' );?>">数据/工具</a></li>
                 </ul>
                 <a class="btn btn-primary  navbar-btn navbar-right" href="<?php echo U( 'Index/Register' );?>" role="button">注册</a>
-                <a class="btn btn-success  navbar-btn navbar-right" href="<?php echo U( 'Index/Login' );?>" role="button">登录</a>
+<!--                <a class="btn btn-success  navbar-btn navbar-right" href="<?php echo U( 'Index/Login' );?>" role="button">登录</a>-->
+                <?php echo check_login_navigation();?>
 
             </div>
             <!--/.nav-collapse -->
@@ -83,7 +84,6 @@
                 </div>
                 <div class="panel-body">
                     <?php if(is_array($latestNews)): foreach($latestNews as $key=>$v): ?><a target="_blank" href="<?php echo U( 'Index/News/detail' , array( 'newsId' =>$v['newsId'] ) );?>"><?php echo ($v['newsTitle']); ?></a>
-                        <br />
                         <br /><?php endforeach; endif; ?>
                     <a class="btn btn-primary" href="<?php echo U( 'Index/News' );?>" role="button">More</a>
                 </div>
@@ -94,7 +94,6 @@
                 </div>
                 <div class="panel-body">
                     <?php if(is_array($latestNotification)): foreach($latestNotification as $key=>$v): ?><a target="_blank" href="<?php echo U( 'Index/Notification/detail' , array( 'notificationId' =>$v['notificationId'] ) );?>"><?php echo ($v['notificationTitle']); ?></a>
-                        <br />
                         <br /><?php endforeach; endif; ?>
                     <a class="btn btn-success" href="<?php echo U( 'Index/Notification' );?>" role="button">More</a>
                 </div>

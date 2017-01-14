@@ -6229,3 +6229,1727 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.001625s ]
 INFO: [ view_end ] --END-- [ RunTime:0.001816s ]
 
+[ 2016-11-30T19:15:09+08:00 ] 0.0.0.0 /disease-platform/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005808s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.231072s ]
+SQL: SELECT * FROM `news` ORDER BY newsDate desc LIMIT 3   [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `notification` [ RunTime:0.294404s ]
+SQL: SELECT * FROM `notification` ORDER BY notificationDate desc LIMIT 3   [ RunTime:0.000866s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.048552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048871s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001579s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001315s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001025s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005902s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001575s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001760s ]
+
+[ 2016-11-30T19:15:34+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002852s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003228s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002590s ]
+NOTIC: [8] Undefined index: userId D:\Software\WampSever\www\disease-platform\App\Lib\Action\Admin\IndexAction.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032451s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001939s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001969s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001545s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008361s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003982s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004277s ]
+
+[ 2016-11-30T19:15:34+08:00 ] 0.0.0.0 /disease-platform/index.php/js/ie10-viewport-bug-workaround.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001123s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001852s ]
+ERR: 无法加载模块:js
+
+[ 2016-11-30T19:17:32+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002672s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002988s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001892s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.145105s ]
+SQL: SELECT * FROM `user` WHERE ( `userName` = 'super' ) AND ( `password` = '96e79218965eb72c92a549dd5a330112' ) LIMIT 1   [ RunTime:0.001426s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012385s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000872s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000878s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000719s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003797s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001176s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001290s ]
+
+[ 2016-11-30T19:17:33+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddUser/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001394s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.021884s ]
+SQL: SELECT `researchTeamId`,`researchTeamName` FROM `researchteam`  [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022677s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000913s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000849s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000498s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003219s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000770s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2016-11-30T19:18:32+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddUser/addUser.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003603s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003273s ]
+SQL: SELECT * FROM `user` WHERE ( userName=用户一 ) LIMIT 1   [ RunTime:0.000260s ]
+ERR: 1054:Unknown column '用户一' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( userName=用户一 ) LIMIT 1  
+SQL: INSERT INTO `user` (`userName`,`password`,`userType`,`userInfo`,`userResearchDirection`,`userResearchResult`,`researchTeam_researchTeamId`) VALUES ('用户一','96e79218965eb72c92a549dd5a330112','adminUser','用户一的简介','用户一的研究方向','用户一的研究成果',null) [ RunTime:0.063821s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007984s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000644s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000626s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002915s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000904s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-11-30T19:18:33+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddUser/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002232s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002390s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.003571s ]
+SQL: SELECT `researchTeamId`,`researchTeamName` FROM `researchteam`  [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011201s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000915s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000662s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000492s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003030s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000896s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2016-11-30T19:18:35+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddNews.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000761s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025024s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000917s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000628s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003033s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000874s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2016-11-30T19:18:59+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddNews/addNews.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000931s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003838s ]
+SQL: INSERT INTO `news` (`newsTitle`,`newsContent`,`newsDate`) VALUES ('第一条新闻','第一条新闻的内容',1480504739) [ RunTime:0.149181s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024548s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002482s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001675s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001425s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008858s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001884s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002126s ]
+
+[ 2016-11-30T19:19:00+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddNews/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001594s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018041s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001017s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000700s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000554s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003321s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000870s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-11-30T19:19:02+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddNotification.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000829s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028216s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001288s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000785s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000671s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003940s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001098s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001221s ]
+
+[ 2016-11-30T19:19:15+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddNotification/addNotification.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001564s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001963s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `notification` [ RunTime:0.003790s ]
+SQL: INSERT INTO `notification` (`notificationTitle`,`notificationContent`,`notificationDate`) VALUES ('第一条通知','第一条通知的内容',1480504755) [ RunTime:0.201464s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023181s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001550s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001894s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006877s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001587s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001775s ]
+
+[ 2016-11-30T19:19:16+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddNotification/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000858s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014732s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000630s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000578s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000454s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002541s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000809s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-11-30T19:19:17+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddConference.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001083s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001734s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019077s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000961s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000718s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001238s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005987s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001204s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2016-11-30T19:19:39+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddConference/addConference.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000788s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `academicconference` [ RunTime:0.177522s ]
+SQL: INSERT INTO `academicconference` (`conferenceName`,`conferenceYear`,`conferenceInfo`) VALUES ('学术会议一',2016,'学术会议一的简介') [ RunTime:0.029481s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010012s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000989s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001285s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000971s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004387s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001271s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2016-11-30T19:19:40+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddConference/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001091s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009850s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000690s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000628s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000670s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003351s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001017s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2016-11-30T19:19:41+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddCreature.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000927s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021425s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001023s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000919s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000674s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003836s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001157s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001287s ]
+
+[ 2016-11-30T19:19:55+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddCreature/addCreature.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000914s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.172659s ]
+SQL: INSERT INTO `creature` (`creatureName`) VALUES ('马') [ RunTime:0.053515s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010437s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000833s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000822s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000668s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003495s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000937s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2016-11-30T19:19:56+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddCreature/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001264s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019437s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000676s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000613s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000456s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002640s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000717s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-11-30T19:19:58+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddSpeciesProject.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001106s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.004796s ]
+SQL: SELECT `researchTeamId` FROM `researchteam`  [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.059440s ]
+SQL: SELECT `researchTeam_researchTeamId` FROM `speciesproject`  [ RunTime:0.000815s ]
+SQL: SELECT `researchTeamId`,`researchTeamName` FROM `researchteam` WHERE ( `researchTeamId` IN () )  [ RunTime:0.000279s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `researchTeamId`,`researchTeamName` FROM `researchteam` WHERE ( `researchTeamId` IN () ) 
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.006500s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.001605s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019862s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001062s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000898s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000829s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004394s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001212s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2016-11-30T19:20:10+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddResearchTeam.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001438s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001651s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030676s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002669s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001247s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002127s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008996s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001967s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002203s ]
+
+[ 2016-11-30T19:20:38+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddResearchTeam/addResearchTeam.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000938s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.010733s ]
+SQL: INSERT INTO `researchteam` (`researchTeamType`,`researchTeamName`,`researchTeamDirection`,`researchTeamTask`,`researchTeamInfo`) VALUES ('participate','团队二','团队二的研究方向','团队二的任务','团队二的简介') [ RunTime:0.058963s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008563s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000660s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000630s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000507s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002754s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000751s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2016-11-30T19:20:40+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddResearchTeam/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001267s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001410s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012032s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000904s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000705s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000556s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003237s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000940s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2016-11-30T19:20:41+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddSpeciesProject.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000735s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.004106s ]
+SQL: SELECT `researchTeamId` FROM `researchteam`  [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003169s ]
+SQL: SELECT `researchTeam_researchTeamId` FROM `speciesproject`  [ RunTime:0.000239s ]
+SQL: SELECT `researchTeamId`,`researchTeamName` FROM `researchteam` WHERE ( `researchTeamId` IN ('4') )  [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.002697s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000271s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013202s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001172s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000824s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000785s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004114s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000954s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001060s ]
+
+[ 2016-11-30T19:21:17+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddSpeciesProject/addSpeciesProject.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002504s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002865s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003235s ]
+SQL: INSERT INTO `speciesproject` (`speciesName`,`speciesInfo`,`projectProgress`,`researchTeam_researchTeamId`,`creature_creatureId`) VALUES ('物种一','物种一的简介','物种一的项目进展',4,3) [ RunTime:0.118573s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012339s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000637s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000633s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000501s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002795s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000839s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2016-11-30T19:21:18+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddSpeciesProject/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000773s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.004190s ]
+SQL: SELECT `researchTeamId` FROM `researchteam`  [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.005996s ]
+SQL: SELECT `researchTeam_researchTeamId` FROM `speciesproject`  [ RunTime:0.000419s ]
+SQL: SELECT `researchTeamId`,`researchTeamName` FROM `researchteam` WHERE ( `researchTeamId` IN () )  [ RunTime:0.000388s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `researchTeamId`,`researchTeamName` FROM `researchteam` WHERE ( `researchTeamId` IN () ) 
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.003040s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000313s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012270s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000753s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000679s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003463s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001611s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001810s ]
+
+[ 2016-11-30T19:21:20+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddSpeciesRelativeArticle.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001221s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001409s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.012620s ]
+SQL: SELECT `speciesProjectId`,`speciesName` FROM `speciesproject`  [ RunTime:0.000778s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.050866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051215s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002353s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002877s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001907s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011332s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003964s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004308s ]
+
+[ 2016-11-30T19:22:11+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddSpeciesRelativeArticle/addSpeciesRelativeArticle.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000775s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `speciesrelativearticle` [ RunTime:0.174286s ]
+SQL: INSERT INTO `speciesrelativearticle` (`relativeArticleTitle`,`relativeArticleLink`,`speciesProject_speciesProjectId`) VALUES ('物种一的相关文章一的标题','http:\\\\www.baidu.com',3) [ RunTime:0.029398s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009584s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000713s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000687s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000553s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002947s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000811s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2016-11-30T19:22:12+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddSpeciesRelativeArticle/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000889s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003321s ]
+SQL: SELECT `speciesProjectId`,`speciesName` FROM `speciesproject`  [ RunTime:0.000269s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010718s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000657s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000598s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000583s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002795s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000786s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-11-30T19:22:14+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddPublishArticle.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001349s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001552s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003067s ]
+SQL: SELECT `speciesProjectId`,`speciesName` FROM `speciesproject`  [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025077s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001153s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001213s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001423s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005804s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000845s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2016-11-30T19:23:05+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddPublishArticle/addPublishArticle.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001352s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.004973s ]
+SQL: SELECT `researchTeam_researchTeamId` FROM `speciesproject` WHERE ( `speciesProjectId` = 3 ) LIMIT 1   [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `publisharticle` [ RunTime:0.160346s ]
+SQL: INSERT INTO `publisharticle` (`publishArticleTitle`,`author`,`publishYear`,`publishArticlelink`,`speciesProject_speciesProjectId`,`researchTeam_researchTeamId`) VALUES ('发表文章一的标题','作者一',2016,'http:\\\\www.baidu.com',3,4) [ RunTime:0.028184s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018129s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001293s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001331s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001025s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005847s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001738s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001930s ]
+
+[ 2016-11-30T19:23:07+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddPublishArticle/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000877s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.005112s ]
+SQL: SELECT `speciesProjectId`,`speciesName` FROM `speciesproject`  [ RunTime:0.000600s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010504s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000689s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000843s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000500s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003060s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000976s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2016-11-30T19:23:08+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddDataToolLink.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000900s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.005059s ]
+SQL: SELECT `speciesProjectId`,`speciesName` FROM `speciesproject`  [ RunTime:0.000456s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028548s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001284s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000873s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000582s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004067s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000894s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2016-11-30T19:23:08+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/js/ie10-viewport-bug-workaround.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001381s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001687s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+ERR: 无法加载模块:js
+
+[ 2016-11-30T19:23:08+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/js/bootstrap.min.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001133s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+ERR: 无法加载模块:js
+
+[ 2016-11-30T19:23:08+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/js/docs.min.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005431s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006585s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001988s ]
+ERR: 无法加载模块:js
+
+[ 2016-11-30T19:24:00+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddDataToolLink/addDataToolLink.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001442s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001651s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `datatoollink` [ RunTime:0.186683s ]
+SQL: INSERT INTO `datatoollink` (`dataToolLinkName`,`dataToolLinkType`,`dataToolLinkUrl`,`dataToolLinkInfo`,`speciesProject_speciesProjectId`) VALUES ('物种一的源数据链接一','data','http:\\\\www.baidu.com','物种一的源数据链接一的信息',3) [ RunTime:0.042370s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009258s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000697s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000835s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000948s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003755s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001217s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001326s ]
+
+[ 2016-11-30T19:24:02+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddDataToolLink/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001091s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003602s ]
+SQL: SELECT `speciesProjectId`,`speciesName` FROM `speciesproject`  [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016821s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000671s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000635s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000476s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002749s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000761s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2016-11-30T19:24:02+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddDataToolLink/js/bootstrap.min.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001311s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001509s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+ERR: 非法操作:js
+
+[ 2016-11-30T19:24:02+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddDataToolLink/js/docs.min.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001102s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+ERR: 非法操作:js
+
+[ 2016-11-30T19:24:02+08:00 ] 0.0.0.0 /disease-platform/index.php/Admin/AddDataToolLink/js/ie10-viewport-bug-workaround.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001560s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001759s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+ERR: 非法操作:js
+
+[ 2016-11-30T19:24:08+08:00 ] 0.0.0.0 /disease-platform/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001236s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001496s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003124s ]
+SQL: SELECT * FROM `news` ORDER BY newsDate desc LIMIT 3   [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `notification` [ RunTime:0.003472s ]
+SQL: SELECT * FROM `notification` ORDER BY notificationDate desc LIMIT 3   [ RunTime:0.000398s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012989s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000767s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000935s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000648s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003540s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000780s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2016-11-30T19:24:21+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/News/detail/newsId/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000993s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003599s ]
+SQL: SELECT * FROM `news` WHERE ( `newsId` = 1 ) LIMIT 1   [ RunTime:0.000443s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035485s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001623s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001711s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000895s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006183s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001312s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2016-11-30T19:24:32+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/Index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000830s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003115s ]
+SQL: SELECT * FROM `news` ORDER BY newsDate desc LIMIT 3   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `notification` [ RunTime:0.003069s ]
+SQL: SELECT * FROM `notification` ORDER BY notificationDate desc LIMIT 3   [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016958s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000885s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001231s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000842s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005245s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001090s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001211s ]
+
+[ 2016-11-30T19:24:34+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/Notification/detail/notificationId/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002414s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002726s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005482s ]
+SQL: SHOW COLUMNS FROM `notification` [ RunTime:0.005911s ]
+SQL: SELECT * FROM `notification` WHERE ( `notificationId` = 1 ) LIMIT 1   [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.086291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086510s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001383s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001321s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001064s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005704s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001591s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001765s ]
+
+[ 2016-11-30T19:24:39+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/Index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001911s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002083s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003031s ]
+SQL: SELECT * FROM `news` ORDER BY newsDate desc LIMIT 3   [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `notification` [ RunTime:0.003569s ]
+SQL: SELECT * FROM `notification` ORDER BY notificationDate desc LIMIT 3   [ RunTime:0.000427s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020999s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000715s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000606s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000483s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002699s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000709s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2016-11-30T19:24:41+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/AboutProject.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000783s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.003587s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003745s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='1' )  [ RunTime:0.000644s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='2' )  [ RunTime:0.000873s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='3' )  [ RunTime:0.001395s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 96 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 108 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 109 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 113 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 114 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 115 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 122 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 124 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 138 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\be2cf06f31e7accfbe8014ce9996eae2.php 第 140 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037264s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001021s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001054s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000741s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004177s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000980s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2016-11-30T19:24:45+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/AboutProject/index/getSpeciesProjectId/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001299s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001499s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.003416s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003065s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='1' )  [ RunTime:0.000506s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='2' )  [ RunTime:0.000276s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='3' )  [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003711s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( `speciesProjectId` = 1 ) LIMIT 1   [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `publisharticle` [ RunTime:0.003255s ]
+SQL: SELECT * FROM `publisharticle` WHERE ( 1=1 AND speciesProject_speciesProjectId='1' )  [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `speciesrelativearticle` [ RunTime:0.002823s ]
+SQL: SELECT * FROM `speciesrelativearticle` WHERE ( 1=1 AND speciesProject_speciesProjectId='1' )  [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017644s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001071s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000900s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000609s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003638s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000758s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2016-11-30T19:24:49+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/DataTool/index/getSpeciesProjectId/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001189s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001786s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: dataToolLink D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\de8ef7a2de27c3b94f69166e37ce445a.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018117s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000671s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000589s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000476s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002619s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000814s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2016-11-30T19:24:57+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/AboutProject/index/getSpeciesProjectId/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000900s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.004340s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.005375s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='1' )  [ RunTime:0.001973s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='2' )  [ RunTime:0.000518s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='3' )  [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.004499s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( `speciesProjectId` = 2 ) LIMIT 1   [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `publisharticle` [ RunTime:0.004854s ]
+SQL: SELECT * FROM `publisharticle` WHERE ( 1=1 AND speciesProject_speciesProjectId='2' )  [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `speciesrelativearticle` [ RunTime:0.003253s ]
+SQL: SELECT * FROM `speciesrelativearticle` WHERE ( 1=1 AND speciesProject_speciesProjectId='2' )  [ RunTime:0.000355s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016719s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001400s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001344s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000730s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005081s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001143s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2016-11-30T19:25:00+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/DataTool/index/getSpeciesProjectId/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000755s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: dataToolLink D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\de8ef7a2de27c3b94f69166e37ce445a.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011214s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000694s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000679s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000691s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002957s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000723s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2016-11-30T19:25:06+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/AboutProject/index/getSpeciesProjectId/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001214s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001409s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.005439s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.007925s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='1' )  [ RunTime:0.000722s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='2' )  [ RunTime:0.000926s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='3' )  [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.004955s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( `speciesProjectId` = 3 ) LIMIT 1   [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `publisharticle` [ RunTime:0.004420s ]
+SQL: SELECT * FROM `publisharticle` WHERE ( 1=1 AND speciesProject_speciesProjectId='3' )  [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `speciesrelativearticle` [ RunTime:0.004581s ]
+SQL: SELECT * FROM `speciesrelativearticle` WHERE ( 1=1 AND speciesProject_speciesProjectId='3' )  [ RunTime:0.000649s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022830s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000948s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000831s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000482s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003235s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000727s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2016-11-30T19:25:09+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/DataTool/index/getSpeciesProjectId/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001285s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: dataToolLink D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\de8ef7a2de27c3b94f69166e37ce445a.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014687s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000656s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000581s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000489s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002612s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000802s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-11-30T19:25:19+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/ResearchTeam.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.005183s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'main' ) LIMIT 1   [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004877s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='2' )  [ RunTime:0.000479s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'participate' )  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='3' )  [ RunTime:0.000320s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='4' )  [ RunTime:0.000282s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 94 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 97 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 100 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 103 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 109 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 121 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 124 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 127 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 130 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 137 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 137 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034072s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001128s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000943s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000835s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004226s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001205s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2016-11-30T19:25:22+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/ResearchTeam/index/getResearchTeamId/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001479s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001687s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005333s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.003617s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'main' ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002838s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='2' )  [ RunTime:0.000340s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'participate' )  [ RunTime:0.000207s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='3' )  [ RunTime:0.000211s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='4' )  [ RunTime:0.000196s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamId` = 2 ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SHOW COLUMNS FROM `publisharticle` [ RunTime:0.002849s ]
+SQL: SELECT * FROM `publisharticle` WHERE ( 1=1 AND researchTeam_researchTeamId='2' )  [ RunTime:0.000290s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 121 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 124 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 127 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 130 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017062s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001211s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001326s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001022s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005205s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000960s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2016-11-30T19:25:25+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/ResearchTeam/index/getUserId/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002580s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002893s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.003433s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'main' ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003462s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='2' )  [ RunTime:0.000568s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'participate' )  [ RunTime:0.000565s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='3' )  [ RunTime:0.000638s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='4' )  [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005381s ]
+SQL: SELECT * FROM `user` WHERE ( `userId` = 2 ) LIMIT 1   [ RunTime:0.001085s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 94 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 97 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 100 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 103 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 109 行.
+NOTIC: [8] Undefined variable: researchTeamInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 137 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020515s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001276s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001741s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001856s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006492s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001218s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2016-11-30T19:25:28+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/ResearchTeam/index/getResearchTeamId/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001369s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.006004s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'main' ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004580s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='2' )  [ RunTime:0.001792s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'participate' )  [ RunTime:0.000423s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='3' )  [ RunTime:0.000397s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='4' )  [ RunTime:0.000414s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamId` = 3 ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `publisharticle` [ RunTime:0.005625s ]
+SQL: SELECT * FROM `publisharticle` WHERE ( 1=1 AND researchTeam_researchTeamId='3' )  [ RunTime:0.000899s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 121 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 124 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 127 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 130 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026162s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003883s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001631s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001298s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009018s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001740s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001931s ]
+
+[ 2016-11-30T19:25:30+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/ResearchTeam/index/getResearchTeamId/4.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001569s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `researchteam` [ RunTime:0.003117s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'main' ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004155s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='2' )  [ RunTime:0.000367s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamType` = 'participate' )  [ RunTime:0.000246s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='3' )  [ RunTime:0.000230s ]
+SQL: SELECT * FROM `user` WHERE ( 1=1 AND researchTeam_researchTeamId='4' )  [ RunTime:0.000217s ]
+SQL: SELECT * FROM `researchteam` WHERE ( `researchTeamId` = 4 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SHOW COLUMNS FROM `publisharticle` [ RunTime:0.003145s ]
+SQL: SELECT * FROM `publisharticle` WHERE ( 1=1 AND researchTeam_researchTeamId='4' )  [ RunTime:0.000330s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 121 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 124 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 127 行.
+NOTIC: [8] Undefined variable: userInfo D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\594bf9b09ac163b668f46d9af392fcc2.php 第 130 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018674s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001113s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001173s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000796s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004691s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001192s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001299s ]
+
+[ 2016-11-30T19:25:34+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/News.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001941s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002221s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.006984s ]
+SQL: SELECT * FROM `news` ORDER BY newsDate desc  [ RunTime:0.000946s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.047789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048013s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001653s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001793s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000993s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006402s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001620s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001854s ]
+
+[ 2016-11-30T19:25:38+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/News/detail/newsId/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000968s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.005035s ]
+SQL: SELECT * FROM `news` WHERE ( `newsId` = 1 ) LIMIT 1   [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009821s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000758s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000601s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000516s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003121s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001172s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2016-11-30T19:25:40+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/News/detail/newsId/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000855s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003379s ]
+SQL: SELECT * FROM `news` WHERE ( `newsId` = 1 ) LIMIT 1   [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010383s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000842s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000748s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000744s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003763s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001238s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2016-11-30T19:25:44+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/Notification.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000929s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `notification` [ RunTime:0.003175s ]
+SQL: SELECT * FROM `notification` ORDER BY notificationDate desc  [ RunTime:0.000281s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.129446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129581s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001167s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001089s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000702s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004161s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001161s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2016-11-30T19:25:47+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/Notification/detail/notificationId/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001123s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `notification` [ RunTime:0.003964s ]
+SQL: SELECT * FROM `notification` WHERE ( `notificationId` = 1 ) LIMIT 1   [ RunTime:0.000430s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015217s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001288s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001105s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000755s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005027s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001163s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2016-11-30T19:25:50+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/ProjectProgress.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000966s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.004828s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.005011s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='1' )  [ RunTime:0.002732s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='2' )  [ RunTime:0.001112s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='3' )  [ RunTime:0.000676s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\d7775deef5323778ccb98189c1169bd8.php 第 74 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\d7775deef5323778ccb98189c1169bd8.php 第 75 行.
+NOTIC: [8] Undefined variable: speciesBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\d7775deef5323778ccb98189c1169bd8.php 第 82 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025832s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001172s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000904s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001356s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004602s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001180s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2016-11-30T19:25:52+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/ProjectProgress/index/getSpeciesProjectId/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001456s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.009054s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='1' )  [ RunTime:0.000584s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='2' )  [ RunTime:0.000335s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='3' )  [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.004887s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( `speciesProjectId` = 1 ) LIMIT 1   [ RunTime:0.000492s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022026s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001053s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000902s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000770s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004414s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001520s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001659s ]
+
+[ 2016-11-30T19:25:54+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/ProjectProgress/index/getSpeciesProjectId/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.002870s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003413s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='1' )  [ RunTime:0.000424s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='2' )  [ RunTime:0.000253s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='3' )  [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.005938s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( `speciesProjectId` = 2 ) LIMIT 1   [ RunTime:0.000525s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017203s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000737s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001988s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005502s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001170s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2016-11-30T19:25:56+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/ProjectProgress/index/getSpeciesProjectId/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000875s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `creature` [ RunTime:0.006028s ]
+SQL: SELECT * FROM `creature`  [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.005613s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='1' )  [ RunTime:0.000924s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='2' )  [ RunTime:0.000500s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( 1=1 AND creature_creatureId='3' )  [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `speciesproject` [ RunTime:0.003703s ]
+SQL: SELECT * FROM `speciesproject` WHERE ( `speciesProjectId` = 3 ) LIMIT 1   [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015267s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001156s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001455s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000801s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005036s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001263s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2016-11-30T19:26:00+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/PublishArticle.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001022s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+SQL: SHOW COLUMNS FROM `publisharticle` [ RunTime:0.004004s ]
+SQL: SELECT * FROM `publisharticle` ORDER BY publishYear desc  [ RunTime:0.000399s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024305s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001027s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001468s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002004s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006773s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001324s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001462s ]
+
+[ 2016-11-30T19:26:04+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/AcademicExchange.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000929s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `academicconference` [ RunTime:0.005763s ]
+SQL: SELECT * FROM `academicconference` ORDER BY conferenceYear desc  [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: conferenceBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\f95d5c5b8a3221f7b8644217f3a4974f.php 第 67 行.
+NOTIC: [8] Undefined variable: conferenceBody D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\f95d5c5b8a3221f7b8644217f3a4974f.php 第 68 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023703s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001203s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001600s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001097s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005766s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001299s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2016-11-30T19:26:06+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/AcademicExchange/index/getConferenceName/%E5%AD%A6%E6%9C%AF%E4%BC%9A%E8%AE%AE%E4%B8%80.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000991s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001123s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `academicconference` [ RunTime:0.003150s ]
+SQL: SELECT * FROM `academicconference` ORDER BY conferenceYear desc  [ RunTime:0.000284s ]
+SQL: SELECT * FROM `academicconference` WHERE ( `conferenceName` = '学术会议一' ) LIMIT 1   [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011297s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000711s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000636s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000572s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003264s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001153s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2016-11-30T19:26:10+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/DataTool.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001133s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: dataToolLink D:\Software\WampSever\www\disease-platform\App\Runtime\Cache\Index\de8ef7a2de27c3b94f69166e37ce445a.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017825s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000881s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000718s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000619s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003618s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001034s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2016-11-30T19:26:12+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/DataTool/index/getType/data.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001456s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+SQL: SHOW COLUMNS FROM `datatoollink` [ RunTime:0.003210s ]
+SQL: SELECT * FROM `datatoollink` WHERE ( `dataToolLinkType` = 'data' )  [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010994s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001916s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001121s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001087s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005893s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001162s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001316s ]
+
+[ 2016-11-30T19:26:13+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/DataTool/index/getType/database.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001842s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002029s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `datatoollink` [ RunTime:0.004686s ]
+SQL: SELECT * FROM `datatoollink` WHERE ( `dataToolLinkType` = 'database' )  [ RunTime:0.000364s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011075s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000815s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000673s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000496s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002920s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000902s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2016-11-30T19:26:14+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/DataTool/index/getType/analysis.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001687s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `datatoollink` [ RunTime:0.003913s ]
+SQL: SELECT * FROM `datatoollink` WHERE ( `dataToolLinkType` = 'analysis' )  [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013969s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001537s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001151s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001676s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007125s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002252s ]
+
+[ 2016-11-30T19:26:15+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/DataTool/index/getType/data.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001114s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001289s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `datatoollink` [ RunTime:0.004682s ]
+SQL: SELECT * FROM `datatoollink` WHERE ( `dataToolLinkType` = 'data' )  [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018744s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001077s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001002s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000971s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004907s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001365s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2016-11-30T19:26:18+08:00 ] 0.0.0.0 /disease-platform/index.php/Index/Index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001062s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003588s ]
+SQL: SELECT * FROM `news` ORDER BY newsDate desc LIMIT 3   [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `notification` [ RunTime:0.004157s ]
+SQL: SELECT * FROM `notification` ORDER BY notificationDate desc LIMIT 3   [ RunTime:0.000504s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021810s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001158s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001555s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001161s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006615s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001961s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002169s ]
+

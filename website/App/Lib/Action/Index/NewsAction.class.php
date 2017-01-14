@@ -6,9 +6,16 @@ class NewsAction extends Action
 {
     public function index()
     {
+        import( 'ORG.Util.Page' );
+        
+        $count = M( 'news' )->count();
+        $page = new Page($count , 10);
+        $limit = $page->firstRow .  ',' . $page->listRows;
+        
         //从数据库读取相应的新闻信息
-        $news = M( 'news' )->order('newsDate desc')->select();
+        $news = M( 'news' )->order('newsDate desc')->limit( $limit )->select();
         $this->news = $news;
+        $this->page = $page->show();
         
         $this->display();
     }

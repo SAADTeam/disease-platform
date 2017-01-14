@@ -2,7 +2,7 @@
 /*
  * 新增新闻动态页控制器
  */
-class AddNewsAction extends Action
+class AddNewsAction extends CommonAction
 {
     public function index()
     {

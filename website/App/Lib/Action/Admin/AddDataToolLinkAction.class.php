@@ -2,7 +2,7 @@
 /*
  * 新增数据工具链接页控制器
  */
-class AddDataToolLinkAction extends Action
+class AddDataToolLinkAction extends CommonAction
 {
     public function index()
     {

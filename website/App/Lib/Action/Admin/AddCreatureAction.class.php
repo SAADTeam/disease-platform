@@ -2,7 +2,7 @@
 /*
  * 新增生物页控制器
  */
-class AddCreatureAction extends Action
+class AddCreatureAction extends CommonAction
 {
     public function index()
     {

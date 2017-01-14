@@ -2,7 +2,7 @@
 /*
  * 新增物种相关文章页控制器
  */
-class AddSpeciesRelativeArticleAction extends Action
+class AddSpeciesRelativeArticleAction extends CommonAction
 {
     public function index()
     {

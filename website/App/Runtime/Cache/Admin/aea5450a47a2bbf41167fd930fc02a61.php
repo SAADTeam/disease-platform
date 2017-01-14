@@ -36,18 +36,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">项目名称</a>
+                <a class="navbar-brand" href="#">中山大学研究平台</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-                <form class="navbar-form navbar-right">
-                    <input type="text" class="form-control" placeholder="Search...">
-                </form>
+                <a class="btn btn-danger  navbar-btn navbar-right" href="<?php echo U( 'Admin/Index/logout' );?>" role="button">退出</a>
+                <p class="navbar-text navbar-right">用户类型：<?php echo ($_SESSION['userType']); ?>&nbsp;&nbsp;</p>
+                <p class="navbar-text navbar-right">用户名：<?php echo ($_SESSION['userName']); ?></p>
             </div>
         </div>
     </nav>
@@ -55,7 +49,7 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 dashboard-sidebar">
                 <ul class="nav nav-sidebar">
-                    <li class="active"><a href="<?php echo U( '/Admin/Index' );?>">用户</a></li>
+                    <li class="active"><a href="<?php echo U( '/Admin/AddUser' );?>">用户</a></li>
                     <li><a href="<?php echo U( '/Admin/AddNews' );?>">新闻</a></li>
                     <li><a href="<?php echo U( '/Admin/AddNotification' );?>">通知</a></li>
                     <li><a href="<?php echo U( '/Admin/AddConference' );?>">学术会议</a></li>

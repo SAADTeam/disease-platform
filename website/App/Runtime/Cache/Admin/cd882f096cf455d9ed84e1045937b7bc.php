@@ -36,18 +36,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">项目名称</a>
+                <a class="navbar-brand" href="#">中山大学研究平台</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-                <form class="navbar-form navbar-right">
-                    <input type="text" class="form-control" placeholder="Search...">
-                </form>
+                <a class="btn btn-danger  navbar-btn navbar-right" href="<?php echo U( 'Admin/Login/logout' );?>" role="button">退出</a>
+                <p class="navbar-text navbar-right">用户类型：<?php echo ($_SESSION['userType']); ?>&nbsp;&nbsp;</p>
+                <p class="navbar-text navbar-right">用户名：<?php echo ($_SESSION['userName']); ?></p>
             </div>
         </div>
     </nav>
@@ -115,7 +109,6 @@
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-md-offset-1 col-sm-10">
                             <button type="submit" class="btn btn-primary">保存</button>
-                            <button class="btn btn-warning">删除</button>
                         </div>
                     </div>
                 </form>

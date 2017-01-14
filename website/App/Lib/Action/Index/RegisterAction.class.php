@@ -17,9 +17,9 @@ class RegisterAction extends Action
         if (!IS_POST) {
             halt('页面不存在');
         }
-        if (!filled_out($_POST)) {
-            $this->error('输入项不能为空！');
-        }
+//        if (!filled_out($_POST)) {
+//            $this->error('输入项不能为空！');
+//        }
         
         //获取表单数据
         $userName = I( 'userName' , '' , 'htmlspecialchars' );

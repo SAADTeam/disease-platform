@@ -44,7 +44,8 @@
                     <li><a href="{:U( 'Index/DataTool' )}">数据/工具</a></li>
                 </ul>
                 <a class="btn btn-primary  navbar-btn navbar-right" href="{:U( 'Index/Register' )}" role="button">注册</a>
-                <a class="btn btn-success  navbar-btn navbar-right" href="{:U( 'Index/Login' )}" role="button">登录</a>
+<!--                <a class="btn btn-success  navbar-btn navbar-right" href="{:U( 'Index/Login' )}" role="button">登录</a>-->
+                {:check_login_navigation()}
 
             </div>
             <!--/.nav-collapse -->
@@ -85,7 +86,6 @@
                     <foreach name="latestNews" item="v">
                         <a target="_blank" href="{:U( 'Index/News/detail' , array( 'newsId' =>$v['newsId'] ) )}">{$v['newsTitle']}</a>
                         <br />
-                        <br />
                     </foreach>
                     <a class="btn btn-primary" href="{:U( 'Index/News' )}" role="button">More</a>
                 </div>
@@ -97,7 +97,6 @@
                 <div class="panel-body">
                     <foreach name="latestNotification" item="v">
                         <a target="_blank" href="{:U( 'Index/Notification/detail' , array( 'notificationId' =>$v['notificationId'] ) )}">{$v['notificationTitle']}</a>
-                        <br />
                         <br />
                     </foreach>
                     <a class="btn btn-success" href="{:U( 'Index/Notification' )}" role="button">More</a>

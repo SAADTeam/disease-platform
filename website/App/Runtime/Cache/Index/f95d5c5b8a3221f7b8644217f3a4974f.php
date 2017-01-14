@@ -44,6 +44,9 @@
                             <li class="active"><a href="<?php echo U( 'Index/AcademicExchange' );?>">学术交流</a></li>
                             <li><a href="<?php echo U( 'Index/DataTool' );?>">数据/工具</a></li>
                         </ul>
+                        <a class="btn btn-primary  navbar-btn navbar-right" href="<?php echo U( 'Index/Register' );?>" role="button">注册</a>
+<!--                <a class="btn btn-success  navbar-btn navbar-right" href="<?php echo U( 'Index/Login' );?>" role="button">登录</a>-->
+                <?php echo check_login_navigation();?>
                     </div>
                     <!--/.nav-collapse -->
                 </nav>

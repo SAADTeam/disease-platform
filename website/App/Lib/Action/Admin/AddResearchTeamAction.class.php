@@ -2,7 +2,7 @@
 /*
  * 新增研究团队页控制器
  */
-class AddResearchTeamAction extends Action
+class AddResearchTeamAction extends CommonAction
 {
     public function index()
     {

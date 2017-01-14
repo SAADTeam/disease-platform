@@ -2,7 +2,7 @@
 /*
  * 新增通知公告页控制器
  */
-class AddNotificationAction extends Action
+class AddNotificationAction extends CommonAction
 {
     public function index()
     {

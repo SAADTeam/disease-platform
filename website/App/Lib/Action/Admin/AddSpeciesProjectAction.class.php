@@ -2,7 +2,7 @@
 /*
  * 新增物种项目页控制器
  */
-class AddSpeciesProjectAction extends Action
+class AddSpeciesProjectAction extends CommonAction
 {
     public function index()
     {

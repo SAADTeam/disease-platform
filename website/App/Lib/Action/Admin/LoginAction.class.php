@@ -1,6 +1,6 @@
 <?php
 /*
- * 登录页控制器
+ * 后台登录页控制器
  */
 class LoginAction extends Action
 {
@@ -8,7 +8,7 @@ class LoginAction extends Action
     {
         $this->display();
     }
-
+    
     public function login()
     {
         if( !IS_POST ){
@@ -32,7 +32,7 @@ class LoginAction extends Action
            session( 'userName' , $user['userName'] );
            session( 'userType' , $user['userType'] );
            
-           $this->success( '登录成功！', U( 'Index/Index/index' ) );
+           $this->success( '登录成功！', U( 'Admin/Index/index' ) );
         }
     }
     
@@ -40,7 +40,7 @@ class LoginAction extends Action
     {
         session_unset();
         session_destroy();
-        $this->success( '退出登录成功！' , U( 'Index/Index/index' ));
+        $this->success( '退出登录成功！' , U( 'Admin/Login/index' ));
     }
 }
 

@@ -42,6 +42,9 @@
                             <li><a href="<?php echo U( 'Index/AcademicExchange' );?>">学术交流</a></li>
                             <li><a href="<?php echo U( 'Index/DataTool' );?>">数据/工具</a></li>
                         </ul>
+                        <a class="btn btn-primary  navbar-btn navbar-right" href="<?php echo U( 'Index/Register' );?>" role="button">注册</a>
+<!--                <a class="btn btn-success  navbar-btn navbar-right" href="<?php echo U( 'Index/Login' );?>" role="button">登录</a>-->
+                <?php echo check_login_navigation();?>
                     </div>
                     <!--/.nav-collapse -->
                 </nav>
@@ -52,15 +55,14 @@
             </div>
             <div class="panel-body">
                 <table class="table table-condensed table-hover table-striped">
-                    
                     <?php if(is_array($notification)): foreach($notification as $key=>$v): ?><tr>
                             <td>
                                 <a  class="margin-left-20 pull-left" href="<?php echo U( 'Index/Notification/detail' , array( 'notificationId' =>$v['notificationId'] ) );?>"><?php echo ($v['notificationTitle']); ?></a>
                                 <i class="margin-right-20 pull-right"><?php echo date( 'Y-m-d' , $v['notificationDate'] );?></i>
                             </td>
                         </tr><?php endforeach; endif; ?>
-                    
                 </table>
+                <div align="center"><?php echo ($page); ?></div>
             </div>
         </div>
     </div>

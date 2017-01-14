@@ -2,7 +2,7 @@
 /*
  * 新增发表文章页控制器
  */
-class AddPublishArticleAction extends Action
+class AddPublishArticleAction extends CommonAction
 {
     public function index()
     {

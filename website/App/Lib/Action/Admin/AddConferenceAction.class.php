@@ -2,7 +2,7 @@
 /*
  * 新增学术会议页控制器
  */
-class AddConferenceAction extends Action
+class AddConferenceAction extends CommonAction
 {
     public function index()
     {
